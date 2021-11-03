@@ -1,0 +1,95 @@
+(If your text editor do not show the empty spaces correctly, it is due to the line ending style. This file uses the UNIX style, which might be different in Windows.)
+
+This dataset comes from Kickstarter (Kickstarter is an American public benefit corporation based in Brooklyn, New York, that maintains a global crowdfunding platform focused on creativity. -- from Wikipedia). For more understanding for either the company or the context of data, please visit the website. However, bear in mind that the current Kickstarter might have different data collection to this dataset's collection date.
+
+TABLE 1: all_projects
+DESCRIPTION: Simple table with the main names and ids.
+
+KEYS:
+Within a period, one can join posts with pledge, info and all_projects using Project_my_id. (in this table, this variable's name is my_id)
+Between periods, one can join projects' information using project_slug. Don't use Project_my_id to match between periods.
+
+VARIABLES:
+creator_name name of the creator
+creator_slug: id of the creator, given by Kickstarter
+project_name: name of the project
+project_slug: id of the project, given by Kickstarter
+my_id: id used to identify a project, given for web scraper
+
+TABLE 2: info
+DESCRIPTION: this table gathers information about the project given in the campaign and community sections. Visit Kickstarter.com for a better understanding.
+
+KEYS:
+Within a period, one can join posts with pledge, info and all_projects using Project_my_id. (in this table, this variable's name is my_id)
+Between periods, one can join projects' information using project_slug. Don't use Project_my_id to match between periods.
+
+VARIABLES:
+my_id: id used to identify a project, given for web scraper
+creator_slug: id of the creator, given by Kickstarter
+project_slug: id of the project, given by Kickstarter
+Blurb: short description of the project
+Category: category
+Location: location
+Staff_recommended: a boolean variable describing whether or not the project is recommended by Kickstarter (only contain False and NA)
+Goal_USD: the amount of money needed by the project creator to complete the project
+Pledge_USD: the amount of money they received so far (until the data collection date)
+Number_Backers: number of funders
+Created_at: date of creation (initial creation of project in the website, takes time before official launching) Format of dates is unix timestamp. https://www.bellogroupltd.com/excel-tutorials/10-digit-unix-timestamp-to-date-excel-converter-tutorial
+Launched_at: date of launching
+Deadline: the date regarding when the funding should end, format in unix as the above.
+Disable_Communication: able/disable receive messages from public
+Project_nb_comments: project number of comments from public
+Project_nb_FAQ: project number of questions in the FAQ section
+Project_nb_updates: project number of posts
+Project_Community_top_cities: top cities from community (Check https://www.kickstarter.com/projects/michaeljsullivan/fantasy-novel-age-of-death-by-michael-j-sullivan/community )
+Project_Community_top_countries
+Project_Community_nb_new_backers
+Project_Community_nb_returning_backers
+Creator_description: creator description
+Creator_nb_projects: creator number of projects
+Creator_date_joined: creator date joined kickstarter
+Creator_nb_backed: number of projects funded by other creators (creator gives money to other creators)
+Creator_location
+Creator_made_comments: creator participated writing comments (see website for further understanding. this variable contains arbitrary information as it contains "KO" values, so if you want to use this, please treat with care)
+Project_description: full text with description
+
+TABLE 3: pledge
+DESCRIPTION: every project has a section for rewards, where the creator offers pledges in exchange of funding. Every line represents a Pledge.
+
+KEYS:
+Within a period, one can join posts with pledge, info and all_projects using Project_my_id.
+Between periods, one can join projects' information using project_slug. Don't use Project_my_id to match between periods.
+
+VARIABLES:
+Project_my_id: id used to identify a project based on web scraper (Internal id)
+creator_slug: id of the creator, given by Kickstarter
+project_slug: id of the project, given by Kickstarter
+Pledge_Title: Pledge title
+Pledge_Description: pledge description
+Pledge_Reward: pledge reward (text description regarding what the backers will get from the project)
+Pledge_Minimum: pledge minimum (amount of money asked)
+Limit: Number of units available. KO stands for unlimited
+Includes:
+Shipping_enabled: shipping enabled
+Shipping_preference: shipping preference (region/country)
+Shipping_summary: places where shipping is enabled
+Backers_count: number of backers (funders)
+Estimated_delivery: estimated delivery date
+Pledge_id: pledge id, given by Kickstarter
+
+TABLE 4: posts
+DESCRIPTION: every project has a section for updates, where the creator can post updates of the project. Every line represents a Post.
+
+KEYS:
+Within a period, one can join posts with pledge, info and all_projects using Project_my_id.
+Between periods, one can join projects' information using project_slug. Don't use Project_my_id to match between periods.
+
+VARIABLES:
+Project_my_id: id used to identify a project based on web scraper (Internal id)
+creator_slug: id of the creator, given by Kickstarter
+project_slug: id of the project, given by Kickstarter
+Post_Nb: sequential number of the post
+Post_Title: post title
+Post_Date: post date
+Post_Text: post text
+Post_id: post id, given by Kickstarter
