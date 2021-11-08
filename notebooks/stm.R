@@ -36,4 +36,19 @@ docs <- out$documents
 vocab <- out$vocab
 meta <- out$meta
 
-games_test_fit <- stm::stm(documents = out$documents, vocab = out$vocab, K = 20, prevalence =~ location + Category + launch_date, max.em.its = 75, data = out$meta, init.type = "Spectral")
+print(paste("First heuristic to determine the number of topics:",round(sqrt(length(games_data$clean_text)/2),0)))
+
+
+timea<-Sys.time()
+many_models <- data_frame(K = c(10, 20, 50, 70, 90, 100, 125, 150,200)) %>%
+  mutate(topic_model = furrr::future_map(K, ~stm::stm(documents=docs, vocab=vocab, K = ., max.em.its = 10,
+                                          verbose = FALSE)))
+
+print(Sys.time()-timea)
+
+save(many_models, file = 'num_topics_df.Rda')
+
+
+
+
+games_test_fit <- stm::stm(documents = out$documents, vocab = out$vocab, K = 42, prevalence =~ location + Category + launch_date, max.em.its = 250, reportevery = 1, data = out$meta, init.type = "Spectral")
