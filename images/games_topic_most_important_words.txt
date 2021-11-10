@@ -1,0 +1,250 @@
+Topic 1 Top Words:
+ 	 Highest Prob: die, hat, euro, ben, team, pro, box, man, set, crowdfunding 
+ 	 FREX: die, hat, ben, euro, pro, crowdfunding, man, marker, trick, basis 
+ 	 Lift: die, hat, ben, euro, pro, express, basis, marker, trick, crowdfunding 
+ 	 Score: die, hat, euro, ben, pro, team, marker, man, box, crowdfunding 
+Topic 2 Top Words:
+ 	 Highest Prob: island, sea, con, solo, combo, guest, click, michael, wish, special 
+ 	 FREX: island, con, sea, combo, solo, guest, michael, alex, wish, convention 
+ 	 Lift: con, island, sea, alex, combo, michael, guest, solo, ocean, convention 
+ 	 Score: con, island, sea, solo, combo, guest, michael, convention, alex, ocean 
+Topic 3 Top Words:
+ 	 Highest Prob: digital, copy, credit, name, version, access, beta, exclusive, physical, soundtrack 
+ 	 FREX: credit, digital, beta, copy, wallpaper, access, poster, name, exclusive, soundtrack 
+ 	 Lift: dig, wallpaper, credit, digital, beta, artbook, drm, ost, poster, forum 
+ 	 Score: dig, digital, beta, credit, copy, wallpaper, soundtrack, physical, access, name 
+Topic 4 Top Words:
+ 	 Highest Prob: scenario, sun, japanese, japan, rpg, learn, story, battle, many, even 
+ 	 FREX: sun, scenario, japanese, japan, anime, maker, learn, rpg, danger, translation 
+ 	 Lift: sun, japanese, scenario, japan, anime, translation, maker, sorry, scroll, shared 
+ 	 Score: sun, scenario, japanese, japan, rpg, anime, learn, translation, english, battle 
+Topic 5 Top Words:
+ 	 Highest Prob: per, app, amp, non, come, zero, base, volume, eight, data 
+ 	 FREX: per, app, zero, non, volume, data, eight, mobile, base, workshop 
+ 	 Lift: per, app, zero, volume, data, eight, non, workshop, mobile, trigger 
+ 	 Score: per, app, volume, non, zero, amp, base, data, come, eight 
+Topic 6 Top Words:
+ 	 Highest Prob: ship, space, crew, weapon, alien, shield, base, galaxy, pirate, captain 
+ 	 FREX: crew, shield, alien, ship, galaxy, space, pirate, captain, weapon, station 
+ 	 Lift: shield, crew, captain, galaxy, alien, pirate, commander, station, arm, ship 
+ 	 Score: shield, ship, crew, space, weapon, alien, galaxy, captain, pirate, station 
+Topic 7 Top Words:
+ 	 Highest Prob: cat, value, mouse, amp, plus, life, find, work, version, human 
+ 	 FREX: cat, mouse, value, thinking, chat, paper, sky, human, plus, sweet 
+ 	 Lift: cat, mouse, value, chat, thinking, lay, cute, scratch, sweet, plant 
+ 	 Score: cat, mouse, value, amp, chat, thinking, pdfs, witch, plus, human 
+Topic 8 Top Words:
+ 	 Highest Prob: amp, event, year, live, gaming, party, video, daniel, people, art 
+ 	 FREX: event, amp, daniel, live, men, career, party, gamers, convention, record 
+ 	 Lift: daniel, amp, event, men, career, prize, weekend, convention, guest, live 
+ 	 Score: daniel, amp, event, year, men, live, convention, party, guest, career 
+Topic 9 Top Words:
+ 	 Highest Prob: sound, content, need, see, capable, replay, browser, html, create, video 
+ 	 FREX: sound, content, capable, replay, browser, html, see, need, thank, deadline 
+ 	 Lift: html, browser, replay, capable, sound, content, see, need, depend, everybody 
+ 	 Score: html, sound, browser, replay, capable, content, see, need, video, manufacturing 
+Topic 10 Top Words:
+ 	 Highest Prob: building, wall, tower, house, set, piece, floor, city, unlocked, castle 
+ 	 FREX: wall, building, tower, floor, house, modular, castle, door, town, corner 
+ 	 Lift: modular, floor, wall, building, tower, house, castle, tall, door, corner 
+ 	 Score: modular, building, tower, wall, floor, house, castle, town, city, unlocked 
+Topic 11 Top Words:
+ 	 Highest Prob: deck, playing, box, design, edition, back, printed, tuck, limited, custom 
+ 	 FREX: deck, tuck, playing, stock, joker, ace, box, ink, red, printed 
+ 	 Lift: joker, tuck, deck, poker, ace, court, ink, numbered, jack, stock 
+ 	 Score: joker, deck, tuck, playing, box, edition, ace, printed, poker, court 
+Topic 12 Top Words:
+ 	 Highest Prob: level, steam, spell, pixel, enemy, bos, mode, magic, wizard, release 
+ 	 FREX: pixel, spell, steam, bos, level, boss, wizard, mode, blade, enemy 
+ 	 Lift: blade, pixel, boss, platformer, spell, bos, greenlight, steam, wizard, jump 
+ 	 Score: blade, steam, spell, level, pixel, bos, greenlight, boss, mode, enemy 
+Topic 13 Top Words:
+ 	 Highest Prob: life, story, way, experience, thing, may, however, work, spirit, mean 
+ 	 FREX: spirit, narrative, life, nature, fall, expertise, sense, relationship, act, situation 
+ 	 Lift: expertise, narrative, spirit, fall, sense, nature, meaningful, emotional, potentially, ambitious 
+ 	 Score: expertise, life, story, narrative, spirit, fall, thing, way, experience, sense 
+Topic 14 Top Words:
+ 	 Highest Prob: pdf, book, core, chapter, hardcover, demon, storm, magic, rule, version 
+ 	 FREX: pdf, hardcover, storm, chapter, demon, core, manual, backerkit, artifact, book 
+ 	 Lift: storm, pdf, hardcover, demon, artifact, manual, chapter, pdfs, beneath, mad 
+ 	 Score: storm, pdf, hardcover, book, chapter, demon, pdfs, core, softcover, backerkit 
+Topic 15 Top Words:
+ 	 Highest Prob: coin, gold, metal, edition, silver, deluxe, stretch, collector, additional, unlocked 
+ 	 FREX: coin, gold, metal, silver, deluxe, collector, edition, finish, bone, variant 
+ 	 Lift: coin, silver, gold, metal, deluxe, bone, collector, colored, hot, variant 
+ 	 Score: coin, gold, silver, metal, deluxe, edition, collector, unlocked, bone, stretch 
+Topic 16 Top Words:
+ 	 Highest Prob: design, art, enemy, combat, weapon, work, development, system, create, skill 
+ 	 FREX: combat, enemy, npc, weapon, equipped, design, knight, fight, vision, engine 
+ 	 Lift: equipped, tight, perk, npc, fighter, combat, lighting, ambitious, vision, weapon 
+ 	 Score: equipped, combat, enemy, weapon, design, npc, development, art, gameplay, perk 
+Topic 17 Top Words:
+ 	 Highest Prob: system, rule, power, role, fate, setting, comic, hero, action, villain 
+ 	 FREX: fate, comic, villain, icon, role, setting, rule, system, horror, rulebook 
+ 	 Lift: icon, villain, fate, comic, attribute, union, heroic, conflict, origin, session 
+ 	 Score: icon, rule, fate, system, villain, comic, hero, rulebook, role, setting 
+Topic 18 Top Words:
+ 	 Highest Prob: dice, set, roll, color, bag, design, tower, black, box, made 
+ 	 FREX: dice, roll, bag, color, sided, tower, blue, black, wood, rolling 
+ 	 Lift: dice, bag, roll, sided, rolling, matching, storage, color, blue, profile 
+ 	 Score: dice, roll, bag, color, tower, set, sided, dragon, wood, unlocked 
+Topic 19 Top Words:
+ 	 Highest Prob: shirt, design, stretch, sticker, pin, available, extra, please, survey, size 
+ 	 FREX: shirt, sticker, pin, survey, poster, bird, size, design, message, please 
+ 	 Lift: pin, sticker, shirt, bird, survey, poster, witch, selection, ordered, brief 
+ 	 Score: pin, shirt, sticker, poster, design, survey, stretch, bird, extra, please 
+Topic 20 Top Words:
+ 	 Highest Prob: kit, scale, piece, part, painted, product, assembly, set, resin, small 
+ 	 FREX: kit, assembly, painted, scale, accessory, resin, instruction, painting, piece, mold 
+ 	 Lift: assembly, kit, accessory, mold, painted, instruction, scale, resin, painting, measure 
+ 	 Score: assembly, resin, kit, painted, scale, accessory, model, piece, instruction, unpainted 
+Topic 21 Top Words:
+ 	 Highest Prob: book, designer, artist, year, work, page, cover, issue, art, print 
+ 	 FREX: magazine, writer, book, author, editor, designer, podcast, john, issue, article 
+ 	 Lift: magazine, article, contributor, podcast, author, interview, editor, john, freelance, writer 
+ 	 Score: magazine, book, writer, designer, podcast, print, editor, author, writing, artist 
+Topic 22 Top Words:
+ 	 Highest Prob: set, terrain, wood, hill, color, forest, tree, piece, mountain, two 
+ 	 FREX: terrain, wood, hill, tree, forest, mountain, paint, set, rock, inch 
+ 	 Lift: hill, terrain, wood, paint, tree, mountain, forest, grey, texture, inch 
+ 	 Score: hill, terrain, set, wood, paint, forest, tree, mountain, color, piece 
+Topic 23 Top Words:
+ 	 Highest Prob: pack, stretch, warrior, unlocked, son, figure, pose, level, free, additional 
+ 	 FREX: pack, warrior, son, pose, guard, figure, soldier, beast, american, unlocked 
+ 	 Lift: son, pack, warrior, pose, guard, soldier, american, horde, individually, beast 
+ 	 Score: son, pack, warrior, pose, unlocked, stretch, soldier, figure, guard, beast 
+Topic 24 Top Words:
+ 	 Highest Prob: may, cost, please, manager, ship, refund, delivery, fee, order, country 
+ 	 FREX: refund, address, shipment, manager, fee, tax, country, canada, usa, delivery 
+ 	 Lift: replacement, refund, acknowledge, vat, policy, import, shipment, agree, address, asia 
+ 	 Score: replacement, refund, manager, shipment, ship, vat, usa, fee, may, delivery 
+Topic 25 Top Words:
+ 	 Highest Prob: episode, arcade, dream, retro, star, video, console, classic, gaming, year 
+ 	 FREX: arcade, episode, retro, dream, console, star, nintendo, classic, machine, playstation 
+ 	 Lift: retro, arcade, episode, nintendo, playstation, console, controller, star, dream, hardware 
+ 	 Score: retro, episode, arcade, console, nintendo, dream, playstation, star, controller, pixel 
+Topic 26 Top Words:
+ 	 Highest Prob: tile, dungeon, map, set, token, treasure, point, create, use, room 
+ 	 FREX: tile, dungeon, map, token, treasure, adventurer, grid, usd, room, field 
+ 	 Lift: tile, dungeon, token, map, grid, treasure, adventurer, cave, favor, marker 
+ 	 Score: tile, dungeon, map, token, treasure, adventurer, grid, set, room, usd 
+Topic 27 Top Words:
+ 	 Highest Prob: music, video, soundtrack, sound, track, story, animation, song, composer, adventure 
+ 	 FREX: music, song, composer, soundtrack, animation, audio, track, musician, voice, chapter 
+ 	 Lift: song, musical, music, composer, recording, audio, musician, animation, animator, soundtrack 
+ 	 Score: song, music, soundtrack, composer, sound, animation, audio, chapter, track, video 
+Topic 28 Top Words:
+ 	 Highest Prob: dragon, fantasy, hero, set, goblin, adventure, shadow, dungeon, elf, dwarf 
+ 	 FREX: dragon, goblin, fantasy, elf, shadow, dwarf, adventurer, legendary, hero, minion 
+ 	 Lift: goblin, elf, dwarf, dragon, shadow, fantasy, minion, champion, legendary, adventurer 
+ 	 Score: goblin, dragon, elf, fantasy, dwarf, hero, dungeon, adventurer, shadow, adventure 
+Topic 29 Top Words:
+ 	 Highest Prob: tier, physical, receive, limited, digital, copy, additional, included, edition, art 
+ 	 FREX: tier, physical, limited, postcard, faction, receive, achieved, included, signed, previous 
+ 	 Lift: postcard, tier, achieved, faction, portrait, artbook, signed, physical, supporter, appear 
+ 	 Score: postcard, tier, physical, digital, faction, edition, copy, receive, limited, artbook 
+Topic 30 Top Words:
+ 	 Highest Prob: table, mat, design, board, gaming, token, product, size, quality, box 
+ 	 FREX: mat, table, token, bundle, board, deluxe, field, ball, gaming, size 
+ 	 Lift: mat, table, bundle, ocean, ball, storage, deluxe, token, slot, flat 
+ 	 Score: mat, table, token, board, design, deluxe, gaming, bundle, battle, product 
+Topic 31 Top Words:
+ 	 Highest Prob: team, experience, studio, best, work, company, product, quality, way, help 
+ 	 FREX: team, studio, arena, company, facing, industry, step, marketing, communication, deliver 
+ 	 Lift: facing, arena, citizen, team, improving, marketing, communication, meeting, root, office 
+ 	 Score: facing, team, arena, studio, experience, company, marketing, industry, best, mission 
+Topic 32 Top Words:
+ 	 Highest Prob: turn, unit, action, war, battle, attack, point, board, opponent, move 
+ 	 FREX: unit, opponent, attack, turn, victory, phase, strategy, war, move, action 
+ 	 Lift: unit, counter, opponent, victory, attacking, battlefield, tactic, troop, territory, phase 
+ 	 Score: unit, opponent, attack, turn, war, battle, action, strategy, board, victory 
+Topic 33 Top Words:
+ 	 Highest Prob: com, http, www, twitter, facebook, youtube, discord, link, website, follow 
+ 	 FREX: http, com, www, discord, twitter, youtube, facebook, link, watch, channel 
+ 	 Lift: discord, http, www, com, youtube, twitter, facebook, google, channel, achievement 
+ 	 Score: discord, http, com, www, twitter, facebook, youtube, demo, link, achievement 
+Topic 34 Top Words:
+ 	 Highest Prob: dog, animal, park, friend, story, life, age, name, secret, family 
+ 	 FREX: dog, animal, park, specie, age, stranger, child, family, ride, boy 
+ 	 Lift: dog, park, animal, stranger, ride, specie, boy, toy, parent, photo 
+ 	 Score: dog, animal, park, specie, stranger, girl, child, ride, age, boy 
+Topic 35 Top Words:
+ 	 Highest Prob: city, adventure, land, town, day, bridge, ancient, night, people, find 
+ 	 FREX: city, bridge, land, town, empire, ancient, temple, village, ghost, strange 
+ 	 Lift: bridge, city, temple, river, ghost, village, empire, land, ruin, town 
+ 	 Score: bridge, city, adventure, town, land, empire, ancient, temple, village, map 
+Topic 36 Top Words:
+ 	 Highest Prob: zombie, hunter, survivor, survival, night, food, survive, mode, dead, gun 
+ 	 FREX: zombie, survivor, hunter, survival, survive, food, hunt, gun, dead, bear 
+ 	 Lift: zombie, survivor, hunter, survival, hunt, bear, survive, food, gun, hunting 
+ 	 Score: zombie, survivor, hunter, survival, food, gun, survive, mode, hunt, night 
+Topic 37 Top Words:
+ 	 Highest Prob: miniature, model, figure, resin, set, production, stretch, metal, cast, cost 
+ 	 FREX: miniature, resin, figure, sculpted, cast, model, casting, metal, range, painted 
+ 	 Lift: sculptor, miniature, sculpted, supplied, casting, unpainted, resin, figure, cast, postage 
+ 	 Score: sculptor, miniature, resin, model, sculpted, unpainted, casting, metal, figure, painted 
+Topic 38 Top Words:
+ 	 Highest Prob: english, version, language, french, german, spanish, edition, production, video, cost 
+ 	 FREX: french, english, spanish, german, language, italian, france, translation, europe, germany 
+ 	 Lift: spanish, french, italian, german, english, france, translation, language, germany, historical 
+ 	 Score: spanish, english, french, german, language, italian, france, translation, edition, version 
+Topic 39 Top Words:
+ 	 Highest Prob: monster, creature, god, realm, magic, race, ice, blood, power, book 
+ 	 FREX: monster, creature, realm, ice, god, blood, race, magical, magic, beast 
+ 	 Lift: ice, monster, realm, blood, creature, god, beast, nightmare, magical, race 
+ 	 Score: ice, monster, creature, realm, god, blood, magic, race, spell, magical 
+Topic 40 Top Words:
+ 	 Highest Prob: expansion, copy, rule, review, board, point, end, take, order, round 
+ 	 FREX: expansion, review, round, manufacturing, fulfillment, copy, rule, win, question, manufacturer 
+ 	 Lift: holiday, expansion, review, geek, manufacturer, manufacturing, playtesting, pricing, round, property 
+ 	 Score: holiday, expansion, copy, rule, review, board, round, print, manufacturing, fulfillment 
+Topic 41 Top Words:
+ 	 Highest Prob: book, adventure, page, art, print, sheet, level, pdf, stretch, rule 
+ 	 FREX: book, sheet, page, adventure, drivethrurpg, print, softcover, module, cover, pdf 
+ 	 Lift: sheet, drivethrurpg, softcover, booklet, pdfs, supplement, overseas, module, hardcover, book 
+ 	 Score: sheet, book, pdf, adventure, drivethrurpg, print, softcover, map, page, hardcover 
+Topic 42 Top Words:
+ 	 Highest Prob: development, support, feature, release, update, community, content, funding, experience, help 
+ 	 FREX: development, feature, audience, community, release, launch, support, funding, update, platform 
+ 	 Lift: audience, virtual, screenshots, interface, implemented, scope, extended, dev, development, feature 
+ 	 Score: audience, development, feature, release, gameplay, steam, support, multiplayer, community, update 
+Topic 43 Top Words:
+ 	 Highest Prob: hero, quest, skill, story, party, item, may, different, combat, mother 
+ 	 FREX: quest, hero, party, mother, skill, npc, soul, combat, kingdom, save 
+ 	 Lift: mother, quest, hero, party, storyline, recruit, peace, outcome, father, npc 
+ 	 Score: mother, hero, quest, skill, party, npc, combat, enemy, story, battle 
+Topic 44 Top Words:
+ 	 Highest Prob: art, story, novel, love, visual, artist, voice, update, help, demo 
+ 	 FREX: novel, visual, voice, trust, route, ending, scene, girl, background, demo 
+ 	 Lift: trust, romance, route, novel, ending, sprite, acting, girl, visual, tumblr 
+ 	 Score: trust, novel, voice, visual, demo, girl, story, sprite, route, romance 
+Topic 45 Top Words:
+ 	 Highest Prob: model, file, print, printed, stretch, printer, printing, printable, set, scale 
+ 	 FREX: file, model, printer, printable, printed, printing, print, layer, license, terrain 
+ 	 Lift: printable, file, printer, model, layer, height, commercial, sci, license, printed 
+ 	 Score: printable, model, file, print, printer, printed, printing, terrain, stretch, scale 
+Topic 46 Top Words:
+ 	 Highest Prob: course, development, learn, alpha, build, engine, create, developer, car, work 
+ 	 FREX: car, alpha, multiplayer, server, course, engine, unity, code, tutorial, learn 
+ 	 Lift: car, tutorial, coding, unity, server, physic, train, vehicle, simulation, fly 
+ 	 Score: car, alpha, multiplayer, unity, server, engine, vehicle, course, developer, student 
+Topic 47 Top Words:
+ 	 Highest Prob: fun, kid, help, friend, board, family, playing, child, way, people 
+ 	 FREX: kid, fun, child, family, friend, board, adult, school, everywhere, playing 
+ 	 Lift: everywhere, kid, adult, child, creativity, parent, activity, family, conversation, fun 
+ 	 Score: everywhere, kid, child, fun, board, family, friend, playing, adult, school 
+Topic 48 Top Words:
+ 	 Highest Prob: thing, really, way, lot, know, something, even, people, idea, going 
+ 	 FREX: really, thing, think, something, got, stuff, lot, cool, going, little 
+ 	 Lift: baby, hey, stuff, bunch, crazy, pretty, guy, maybe, cool, basically 
+ 	 Score: baby, really, thing, think, lot, something, know, stuff, people, going 
+Topic 49 Top Words:
+ 	 Highest Prob: enemy, ability, combat, weapon, planet, system, unique, item, skill, crystal 
+ 	 FREX: planet, enemy, crystal, combat, ability, energy, weapon, crafting, fire, resource 
+ 	 Lift: crystal, planet, crafting, defense, generated, pet, energy, craft, guild, foe 
+ 	 Score: crystal, enemy, combat, weapon, planet, ability, battle, attack, skill, armor 
+Topic 50 Top Words:
+ 	 Highest Prob: puzzle, story, solve, find, adventure, room, clue, object, experience, secret 
+ 	 FREX: puzzle, solve, clue, object, solving, mystery, escape, solution, discover, room 
+ 	 Lift: puzzle, clue, solve, solving, object, solution, escape, minimal, humble, mystery 
+ 	 Score: puzzle, solve, clue, story, solving, adventure, object, room, mystery, escape

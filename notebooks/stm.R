@@ -12,7 +12,7 @@ library(furrr)
 library(stminsights)
 library(quanteda)
 
-games_data <- read.csv('./data/clean_games_data.csv')
+source <- read.csv('./data/clean_design_data.csv')
 
 
 # Function to establish own stopwords that appear too many times
@@ -28,7 +28,7 @@ get_word_freq <- function(dataframe, n = 25) {
   return(c(freq_list[1:n,1]))
 }
 
-stm_data <- games_data[c('clean_text', 'location', 'Category', 'launch_date')]
+stm_data <- source[c('clean_text', 'location', 'Category', 'launch_date')]
 
 
 processed <- textProcessor(stm_data$clean_text, metadata = stm_data, lowercase = FALSE, removepunctuation = FALSE, stem=FALSE, sparselevel = 0.997, customstopwords = get_word_freq(stm_data))
@@ -42,7 +42,7 @@ docs <- out$documents
 vocab <- out$vocab
 meta <- out$meta
 
-print(paste("First heuristic to determine the number of topics:",round(sqrt(length(games_data$clean_text)/2),0)))
+print(paste("First heuristic to determine the number of topics:",round(sqrt(length(source$clean_text)/2),0)))
 
 many_models <- data_frame(K = c(20, 50, 100, 150)) %>%
   mutate(topic_model = furrr::future_map(K, ~stm::stm(documents=docs, vocab=vocab, K = ., max.em.its = 10,
@@ -89,4 +89,15 @@ k_result %>%
        subtitle = "Models with fewer topics have higher semantic coherence for more topics, but lower exclusivity")
 
 
-games_test_fit <- stm(documents = out$documents, vocab = out$vocab, K = 50, prevalence =~ location + Category + launch_date, max.em.its = 20, reportevery = 5, data = out$meta, init.type = "Spectral")
+stm_fit <- stm(documents = out$documents, vocab = out$vocab, K = 50, prevalence =~ location + Category + launch_date, max.em.its = 20, reportevery = 5, data = out$meta, init.type = "Spectral", gamma.prior='L1')
+
+plot(stm_fit, n=5,labeltype = "frex", topics = 25:50, type="summary")
+
+labelTopics(stm_fit,n=10) 
+
+barplot(stm_fit$theta[1,],names.arg = paste("t",1:50))
+
+
+summary(cbind(meta,stm_fit$theta))
+
+write.csv(cbind(meta,stm_fit$theta), './data/tech_stm_theta_with_meta.csv')

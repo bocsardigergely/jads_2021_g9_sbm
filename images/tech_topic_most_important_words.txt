@@ -1,0 +1,250 @@
+Topic 1 Top Words:
+ 	 Highest Prob: die, mit, man, fall, team, tag, english, training, ten, test 
+ 	 FREX: die, mit, man, fall, tag, english, ten, training, installation, book 
+ 	 Lift: die, mit, man, tag, fall, english, ten, germany, specialist, ethernet 
+ 	 Score: die, mit, man, tag, training, fall, english, book, ethernet, server 
+Topic 2 Top Words:
+ 	 Highest Prob: web, son, marketing, application, technique, personal, blog, base, english, california 
+ 	 FREX: son, web, marketing, technique, blog, california, personal, application, english, framework 
+ 	 Lift: son, web, marketing, technique, california, blog, english, ten, difficulty, framework 
+ 	 Score: son, web, marketing, technique, blog, application, english, california, base, personal 
+Topic 3 Top Words:
+ 	 Highest Prob: virtual, world, element, reality, thinking, experience, technology, coding, block, way 
+ 	 FREX: virtual, element, thinking, reality, coding, interact, character, natural, world, interaction 
+ 	 Lift: thinking, virtual, element, reality, interact, interaction, character, coding, logic, imagination 
+ 	 Score: thinking, virtual, element, reality, coding, world, character, interact, block, interaction 
+Topic 4 Top Words:
+ 	 Highest Prob: real, internet, thing, software, connection, alpha, wifi, really, home, watch 
+ 	 FREX: internet, real, thing, alpha, connection, tester, wifi, iot, really, perhaps 
+ 	 Lift: internet, real, alpha, thing, perhaps, tester, bunch, win, difficulty, gain 
+ 	 Score: internet, real, thing, alpha, software, iot, wifi, connection, tester, watch 
+Topic 5 Top Words:
+ 	 Highest Prob: news, magazine, article, reader, issue, site, rock, fan, report, content 
+ 	 FREX: magazine, news, article, rock, reader, report, editor, york, american, fan 
+ 	 Lift: rock, magazine, news, article, reader, york, american, policy, published, report 
+ 	 Score: rock, magazine, news, reader, article, editor, site, fan, report, york 
+Topic 6 Top Words:
+ 	 Highest Prob: digital, check, total, analog, information, office, law, state, add, control 
+ 	 FREX: digital, total, check, analog, law, office, tax, checking, state, legal 
+ 	 Lift: total, digital, check, law, analog, checking, tax, legal, office, familiar 
+ 	 Score: total, digital, check, analog, law, office, state, tax, checking, information 
+Topic 7 Top Words:
+ 	 Highest Prob: video, audio, music, live, crowdfunding, recording, effect, voice, quality, jack 
+ 	 FREX: crowdfunding, audio, recording, video, jack, live, microphone, streaming, music, instrument 
+ 	 Lift: crowdfunding, recording, microphone, jack, streaming, video, audio, instrument, recorded, stereo 
+ 	 Score: crowdfunding, audio, video, music, recording, jack, microphone, stereo, streaming, instrument 
+Topic 8 Top Words:
+ 	 Highest Prob: base, portable, laptop, wireless, charging, station, magnetic, desk, compact, charge 
+ 	 FREX: portable, laptop, base, magnetic, station, desk, compact, pad, wireless, inch 
+ 	 Lift: portable, base, laptop, magnetic, desk, station, pad, compact, magnet, inch 
+ 	 Score: portable, base, charging, laptop, magnetic, wireless, desk, station, inch, pad 
+Topic 9 Top Words:
+ 	 Highest Prob: end, bag, pack, back, made, stand, strap, august, two, loop 
+ 	 FREX: bag, pack, august, strap, end, loop, carry, stand, position, pocket 
+ 	 Lift: august, bag, strap, loop, carry, pack, usd, september, position, stand 
+ 	 Score: august, bag, strap, pack, end, loop, pocket, carry, position, stand 
+Topic 10 Top Words:
+ 	 Highest Prob: per, non, value, via, fly, net, video, come, auto, feature 
+ 	 FREX: non, per, fly, net, value, via, profit, auto, contract, stick 
+ 	 Lift: net, non, fly, per, value, profit, auto, contract, via, stick 
+ 	 Score: net, per, non, fly, value, via, profit, video, auto, stick 
+Topic 11 Top Words:
+ 	 Highest Prob: student, school, learning, education, teacher, skill, learn, educational, program, computer 
+ 	 FREX: student, school, teacher, education, learning, educational, classroom, skill, teaching, teach 
+ 	 Lift: student, teacher, school, classroom, education, educational, teaching, lesson, learning, teach 
+ 	 Score: student, teacher, school, learning, education, educational, classroom, teaching, skill, teach 
+Topic 12 Top Words:
+ 	 Highest Prob: board, arduino, raspberry, pin, usb, shield, power, output, hardware, input 
+ 	 FREX: raspberry, arduino, shield, board, pin, header, chip, connector, output, pcb 
+ 	 Lift: shield, gpio, header, raspberry, pin, arduino, microcontroller, board, serial, ide 
+ 	 Score: shield, arduino, board, raspberry, pin, gpio, header, usb, voltage, connector 
+Topic 13 Top Words:
+ 	 Highest Prob: control, bluetooth, android, apps, color, remote, advance, mobile, technology, personal 
+ 	 FREX: bluetooth, android, advance, control, apps, remote, cycle, color, stack, mobile 
+ 	 Lift: advance, bluetooth, android, cycle, stack, remote, apps, control, wirelessly, api 
+ 	 Score: advance, bluetooth, control, android, apps, color, remote, cycle, mobile, api 
+Topic 14 Top Words:
+ 	 Highest Prob: plus, mode, application, service, smartphone, route, version, bus, clip, communication 
+ 	 FREX: plus, mode, route, service, bus, clip, smartphone, application, communication, contribution 
+ 	 Lift: route, plus, bus, mode, clip, fixed, service, fabrication, provider, contribution 
+ 	 Score: route, plus, mode, bus, application, service, smartphone, clip, communication, version 
+Topic 15 Top Words:
+ 	 Highest Prob: see, content, capable, browser, html, replay, gas, control, quality, production 
+ 	 FREX: capable, html, content, replay, gas, see, browser, function, innovative, mass 
+ 	 Lift: gas, replay, html, browser, capable, content, see, specially, germany, packed 
+ 	 Score: gas, replay, html, browser, capable, content, see, manufacturing, control, function 
+Topic 16 Top Words:
+ 	 Highest Prob: team, experience, technology, development, create, world, life, year, best, working 
+ 	 FREX: team, experience, founder, designer, industry, tech, hello, partner, professional, business 
+ 	 Lift: talented, hello, passionate, ceo, team, entrepreneur, designer, founder, startup, talent 
+ 	 Score: talented, team, experience, hello, life, founder, industry, technology, development, designer 
+Topic 17 Top Words:
+ 	 Highest Prob: com, http, www, org, thing, watch, blog, youtube, pro, hidden 
+ 	 FREX: com, http, www, org, blog, youtube, hidden, watch, funded, pro 
+ 	 Lift: com, www, http, org, hidden, blog, youtube, info, watch, invested 
+ 	 Score: com, http, www, org, youtube, blog, watch, hidden, thing, pro 
+Topic 18 Top Words:
+ 	 Highest Prob: application, development, user, research, technology, solution, community, information, data, company 
+ 	 FREX: research, conference, organization, solution, intelligence, analysis, resource, university, field, database 
+ 	 Lift: conference, intelligence, artificial, department, collected, infrastructure, analysis, organization, research, ongoing 
+ 	 Score: conference, application, research, data, organization, database, intelligence, community, development, platform 
+Topic 19 Top Words:
+ 	 Highest Prob: game, screen, application, apps, user, gaming, scratch, mobile, controller, create 
+ 	 FREX: game, scratch, screen, gaming, pixel, console, apps, controller, display, tablet 
+ 	 Lift: scratch, game, console, gaming, pixel, animation, screen, character, movie, hdmi 
+ 	 Score: scratch, game, screen, gaming, pixel, console, apps, hdmi, controller, character 
+Topic 20 Top Words:
+ 	 Highest Prob: speaker, music, audio, headphone, bluetooth, ear, quality, wireless, noise, high 
+ 	 FREX: speaker, headphone, ear, music, wired, noise, audio, listening, bluetooth, volume 
+ 	 Lift: wired, ear, speaker, headphone, listening, music, listen, stereo, noise, audio 
+ 	 Score: wired, headphone, speaker, audio, ear, music, bluetooth, stereo, wireless, noise 
+Topic 21 Top Words:
+ 	 Highest Prob: sensor, module, data, hardware, software, wifi, network, system, power, temperature 
+ 	 FREX: module, sensor, gps, radio, wifi, iot, temperature, data, firmware, measurement 
+ 	 Lift: gps, iot, module, radio, sensor, mhz, wifi, measurement, monitoring, ethernet 
+ 	 Score: gps, sensor, module, data, iot, wifi, temperature, radio, mhz, hardware 
+Topic 22 Top Words:
+ 	 Highest Prob: facebook, twitter, website, page, channel, instagram, follow, youtube, update, see 
+ 	 FREX: twitter, facebook, instagram, channel, page, follow, youtube, website, update, google 
+ 	 Lift: instagram, twitter, facebook, youtube, follow, channel, visit, page, blog, mix 
+ 	 Score: instagram, facebook, twitter, youtube, website, channel, page, follow, google, update 
+Topic 23 Top Words:
+ 	 Highest Prob: machine, cnc, part, coffee, plastic, material, shop, cut, plate, made 
+ 	 FREX: cnc, machine, coffee, shop, cut, plate, plastic, wood, cutting, aluminum 
+ 	 Lift: coffee, cnc, machine, wood, shop, craft, plate, cutting, steel, cut 
+ 	 Score: coffee, machine, cnc, plate, wood, plastic, aluminum, shop, metal, steel 
+Topic 24 Top Words:
+ 	 Highest Prob: usb, phone, cable, iphone, pro, case, port, charging, apple, ipad 
+ 	 FREX: iphone, cable, usb, pro, ipad, apple, phone, port, case, charging 
+ 	 Lift: ipad, iphone, samsung, pro, apple, cable, usb, port, smartphones, adapter 
+ 	 Score: ipad, usb, iphone, charging, cable, phone, port, pro, apple, charger 
+Topic 25 Top Words:
+ 	 Highest Prob: social, medium, event, network, share, platform, user, block, group, content 
+ 	 FREX: social, medium, event, network, block, coverage, share, group, platform, college 
+ 	 Lift: social, medium, coverage, event, feed, college, block, network, season, chat 
+ 	 Score: social, medium, network, event, platform, share, block, content, coverage, user 
+Topic 26 Top Words:
+ 	 Highest Prob: window, system, file, memory, software, feature, version, card, support, engine 
+ 	 FREX: window, memory, file, raw, engine, mac, linux, cpu, storage, card 
+ 	 Lift: raw, ram, window, cpu, memory, engine, file, mac, linux, format 
+ 	 Score: raw, file, window, memory, mac, linux, cpu, ram, engine, system 
+Topic 27 Top Words:
+ 	 Highest Prob: course, code, language, python, programming, book, learn, developer, development, goal 
+ 	 FREX: language, course, python, code, book, programming, tutorial, learn, developer, framework 
+ 	 Lift: python, language, framework, course, book, tutorial, code, editor, topic, beginner 
+ 	 Score: python, language, code, course, programming, book, developer, learn, tutorial, editor 
+Topic 28 Top Words:
+ 	 Highest Prob: kit, maker, open, space, build, world, sensor, hardware, community, come 
+ 	 FREX: maker, kit, mini, revolution, toy, space, fun, electronics, sensor, programming 
+ 	 Lift: revolution, maker, toy, kit, mini, experiment, inventor, creator, imagination, spectrum 
+ 	 Score: revolution, kit, maker, arduino, sensor, robot, toy, mini, kid, programming 
+Topic 29 Top Words:
+ 	 Highest Prob: tool, box, science, lab, bar, scientist, research, earth, open, hand 
+ 	 FREX: bar, science, scientist, lab, earth, box, tool, researcher, star, michael 
+ 	 Lift: bar, scientist, michael, science, earth, researcher, scientific, star, lab, experiment 
+ 	 Score: bar, science, tool, scientist, box, lab, researcher, earth, scientific, star 
+Topic 30 Top Words:
+ 	 Highest Prob: user, business, website, money, site, want, platform, software, service, feature 
+ 	 FREX: site, business, money, beta, client, website, pay, hosting, subscription, account 
+ 	 Lift: hosting, site, subscription, client, expense, money, payment, mail, business, paying 
+ 	 Score: hosting, site, business, website, money, platform, user, subscription, software, service 
+Topic 31 Top Words:
+ 	 Highest Prob: robot, team, year, competition, engineering, robotics, first, technology, system, university 
+ 	 FREX: robot, competition, robotics, engineering, stem, university, ball, team, human, driving 
+ 	 Lift: competition, robot, stem, robotics, ball, floor, engineering, driving, university, season 
+ 	 Score: competition, robot, robotics, stem, team, ball, engineering, motor, university, programming 
+Topic 32 Top Words:
+ 	 Highest Prob: amp, link, logo, pledge, reward, shirt, friendly, system, etc, photo 
+ 	 FREX: amp, logo, link, shirt, friendly, pledge, sticker, series, gold, graphic 
+ 	 Lift: logo, amp, link, shirt, gold, sticker, silver, friendly, sponsor, trademark 
+ 	 Score: logo, amp, link, shirt, pledge, sponsor, friendly, photo, sticker, mini 
+Topic 33 Top Words:
+ 	 Highest Prob: keyboard, key, switch, button, layout, handy, mouse, controller, usb, control 
+ 	 FREX: keyboard, handy, layout, switch, key, mouse, button, controller, mac, gaming 
+ 	 Lift: handy, keyboard, mouse, layout, key, switch, finger, venture, gaming, rgb 
+ 	 Score: handy, keyboard, switch, key, mouse, layout, usb, controller, gaming, mac 
+Topic 34 Top Words:
+ 	 Highest Prob: data, cloud, access, computer, security, file, network, software, user, secure 
+ 	 FREX: cloud, security, data, secure, password, file, server, access, privacy, network 
+ 	 Lift: hacker, password, cloud, privacy, secure, server, securely, private, security, stored 
+ 	 Score: hacker, data, password, cloud, security, file, server, privacy, network, secure 
+Topic 35 Top Words:
+ 	 Highest Prob: child, kid, family, pet, parent, life, safe, button, know, way 
+ 	 FREX: child, pet, kid, parent, family, safe, activity, food, emergency, message 
+ 	 Lift: pet, parent, child, kid, loved, family, adult, emergency, bed, toy 
+ 	 Score: pet, kid, child, parent, family, food, safe, alert, emergency, toy 
+Topic 36 Top Words:
+ 	 Highest Prob: camera, lens, image, mount, film, glass, photo, video, smartphone, capture 
+ 	 FREX: camera, lens, film, glass, mount, image, ring, capture, shot, eye 
+ 	 Lift: lens, camera, film, photography, shot, glass, ring, capture, mount, angle 
+ 	 Score: lens, camera, mount, film, glass, image, shot, ring, capture, smartphone 
+Topic 37 Top Words:
+ 	 Highest Prob: people, community, story, world, woman, support, want, life, year, goal 
+ 	 FREX: woman, story, city, community, travel, people, culture, organization, global, country 
+ 	 Lift: woman, culture, story, south, city, interview, inspire, government, organization, donation 
+ 	 Score: woman, community, story, people, city, travel, organization, culture, world, food 
+Topic 38 Top Words:
+ 	 Highest Prob: water, air, plant, system, filter, clean, energy, food, home, technology 
+ 	 FREX: water, plant, air, filter, clean, food, cleaning, grow, waste, pressure 
+ 	 Lift: plant, water, air, cleaning, waste, tank, filter, clean, dry, fresh 
+ 	 Score: plant, water, air, filter, food, cleaning, clean, temperature, carbon, grow 
+Topic 39 Top Words:
+ 	 Highest Prob: production, prototype, manufacturing, first, component, unit, quality, testing, process, order 
+ 	 FREX: manufacturing, production, tooling, prototype, supplier, unit, manufacturer, mold, final, component 
+ 	 Lift: foresee, molding, injection, tooling, mold, manufacturing, finalize, fulfillment, factory, fcc 
+ 	 Score: foresee, manufacturing, production, prototype, unit, tooling, component, manufacturer, shipping, injection 
+Topic 40 Top Words:
+ 	 Highest Prob: battery, power, charge, solar, energy, charging, charger, usb, cell, panel 
+ 	 FREX: battery, solar, charge, charger, power, cell, energy, lithium, mah, heat 
+ 	 Lift: solar, lithium, mah, battery, rechargeable, cell, charger, electricity, sun, charge 
+ 	 Score: solar, battery, charging, power, charger, charge, mah, lithium, usb, energy 
+Topic 41 Top Words:
+ 	 Highest Prob: art, workshop, artist, fire, material, event, building, build, open, space 
+ 	 FREX: workshop, art, fire, artist, act, event, construction, staff, driver, building 
+ 	 Lift: workshop, fire, art, artist, kick, society, act, staff, construction, mention 
+ 	 Score: workshop, art, fire, artist, driver, event, building, material, staff, build 
+Topic 42 Top Words:
+ 	 Highest Prob: home, smart, lock, system, door, security, alarm, control, set, alert 
+ 	 FREX: lock, home, door, alarm, security, alert, smart, hub, automation, tap 
+ 	 Lift: lock, alarm, door, home, zone, automation, alert, unlock, smart, security 
+ 	 Score: lock, home, smart, alarm, security, door, alert, hub, sensor, automation 
+Topic 43 Top Words:
+ 	 Highest Prob: campaign, want, backer, reward, first, day, every, way, shipping, take 
+ 	 FREX: backer, shipping, campaign, stretch, reward, really, day, something, got, sure 
+ 	 Lift: faq, crazy, looked, tier, refund, nice, guy, gift, happy, ons 
+ 	 Score: faq, campaign, shipping, backer, want, reward, day, thing, pledge, every 
+Topic 44 Top Words:
+ 	 Highest Prob: printer, print, printing, printed, material, software, high, model, cap, part 
+ 	 FREX: printer, printing, print, printed, cap, arm, object, resolution, model, black 
+ 	 Lift: cap, printer, printing, print, printed, bed, arm, diameter, resolution, accuracy 
+ 	 Score: cap, printer, printing, print, printed, arm, bed, motor, software, material 
+Topic 45 Top Words:
+ 	 Highest Prob: body, sleep, health, skin, temperature, brain, training, day, technology, better 
+ 	 FREX: sleep, body, skin, brain, health, exercise, stress, temperature, training, cold 
+ 	 Lift: skin, sleep, brain, body, exercise, stress, health, wake, cold, pain 
+ 	 Score: skin, sleep, body, temperature, health, training, brain, exercise, cold, stress 
+Topic 46 Top Words:
+ 	 Highest Prob: phone, map, call, user, feature, location, mobile, android, able, find 
+ 	 FREX: map, call, phone, location, street, item, mobile, track, text, sport 
+ 	 Lift: street, map, call, location, song, premium, sport, missed, phone, item 
+ 	 Score: street, phone, map, call, location, mobile, android, song, sport, user 
+Topic 47 Top Words:
+ 	 Highest Prob: kit, part, circuit, component, pcb, power, tube, reward, supply, version 
+ 	 FREX: tube, circuit, pcb, kit, clock, assembled, supply, enclosure, assembly, component 
+ 	 Lift: tube, clock, enclosure, diy, solder, assembled, pcbs, kit, circuit, assemble 
+ 	 Score: tube, kit, circuit, pcb, voltage, enclosure, clock, output, diy, assembly 
+Topic 48 Top Words:
+ 	 Highest Prob: light, led, color, lighting, blue, mode, white, red, button, brightness 
+ 	 FREX: light, led, lighting, brightness, blue, color, white, dark, red, bright 
+ 	 Lift: brightness, light, lighting, led, bright, dark, yellow, blue, ambient, red 
+ 	 Score: brightness, light, led, color, lighting, mode, blue, rgb, white, bright 
+Topic 49 Top Words:
+ 	 Highest Prob: bike, car, ride, wheel, electric, motor, vehicle, speed, system, riding 
+ 	 FREX: bike, ride, wheel, electric, car, riding, vehicle, motor, road, speed 
+ 	 Lift: bike, riding, ride, wheel, vehicle, electric, car, rear, mile, road 
+ 	 Score: bike, ride, electric, riding, wheel, motor, vehicle, car, rear, speed 
+Topic 50 Top Words:
+ 	 Highest Prob: smart, test, diverse, model, technology, way, display, system, using, scale 
+ 	 FREX: smart, diverse, test, dynamic, financial, scale, wearable, display, putting, model 
+ 	 Lift: diverse, smart, wearable, dynamic, financial, fashion, putting, test, realistic, entry 
+ 	 Score: diverse, smart, test, wearable, sensor, financial, dynamic, model, display, player
