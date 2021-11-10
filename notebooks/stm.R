@@ -93,11 +93,13 @@ stm_fit <- stm(documents = out$documents, vocab = out$vocab, K = 50, prevalence 
 
 plot(stm_fit, n=5,labeltype = "frex", topics = 25:50, type="summary")
 
-labelTopics(stm_fit,n=10) 
+labelTopics(stm_fit,n=10)
 
 barplot(stm_fit$theta[1,],names.arg = paste("t",1:50))
 
 
 summary(cbind(meta,stm_fit$theta))
 
-write.csv(cbind(meta,stm_fit$theta), './data/tech_stm_theta_with_meta.csv')
+write.csv(cbind(meta,stm_fit$theta), './data/design_stm_theta_with_meta.csv')
+
+stm_data[1,]['clean_text']
