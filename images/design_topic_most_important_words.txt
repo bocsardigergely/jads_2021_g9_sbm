@@ -1,0 +1,250 @@
+Topic 1 Top Words:
+ 	 Highest Prob: creative, pop, creativity, google, idea, workshop, director, value, share, heart 
+ 	 FREX: creative, pop, google, creativity, workshop, director, value, heart, approach, idea 
+ 	 Lift: google, creative, pop, creativity, director, workshop, honest, rule, approach, illustrator 
+ 	 Score: google, creative, pop, creativity, director, workshop, idea, value, heart, illustrator 
+Topic 2 Top Words:
+ 	 Highest Prob: version, die, pro, tag, sport, ten, standard, pick, german, detail 
+ 	 FREX: die, version, pro, tag, ten, sport, pick, german, standard, man 
+ 	 Lift: ten, die, tag, version, pro, sport, german, pick, man, robust 
+ 	 Score: ten, die, version, pro, tag, sport, german, pick, standard, diamond 
+Topic 3 Top Words:
+ 	 Highest Prob: type, postcard, set, amp, wall, two, germany, file, reward, digital 
+ 	 FREX: postcard, type, germany, file, wall, square, text, character, digital, five 
+ 	 Lift: postcard, type, germany, file, text, square, blank, wall, budget, season 
+ 	 Score: postcard, type, file, wall, germany, text, set, digital, square, blank 
+Topic 4 Top Words:
+ 	 Highest Prob: please, cover, information, thank, support, site, share, record, help, see 
+ 	 FREX: cover, please, information, site, record, ended, thank, email, contact, question 
+ 	 Lift: ended, site, record, information, cover, please, info, data, ask, email 
+ 	 Score: ended, cover, site, please, information, record, thank, data, email, image 
+Topic 5 Top Words:
+ 	 Highest Prob: simple, high, click, resolution, change, subject, music, memory, object, image 
+ 	 FREX: simple, resolution, click, subject, music, memory, change, object, high, living 
+ 	 Lift: simple, resolution, subject, click, music, memory, object, change, living, communication 
+ 	 Score: simple, resolution, click, subject, music, memory, high, object, change, image 
+Topic 6 Top Words:
+ 	 Highest Prob: pin, enamel, gold, hard, may, shipping, rubber, instagram, backing, tier 
+ 	 FREX: enamel, pin, gold, rubber, backing, tier, hard, instagram, pride, shop 
+ 	 Lift: enamel, pin, pride, rubber, unlock, tier, backing, gold, august, instagram 
+ 	 Score: enamel, pin, rubber, gold, card, tier, artist, instagram, unlock, pride 
+Topic 7 Top Words:
+ 	 Highest Prob: backer, reward, pledge, receive, add, shipping, survey, early, amount, end 
+ 	 FREX: backer, pledge, reward, receive, survey, moved, bird, tier, early, current 
+ 	 Lift: moved, backer, pledge, november, pledged, reward, bird, receive, confirm, tier 
+ 	 Score: moved, backer, pledge, reward, receive, survey, add, tier, bird, shipping 
+Topic 8 Top Words:
+ 	 Highest Prob: final, prototype, concept, process, stage, idea, test, shown, high, sample 
+ 	 FREX: final, prototype, concept, stage, shown, test, sample, came, slightly, sketch 
+ 	 Lift: final, concept, prototype, stage, shown, adjustment, sketch, slightly, test, whilst 
+ 	 Score: final, prototype, concept, stage, shown, test, process, sample, sketch, adjustment 
+Topic 9 Top Words:
+ 	 Highest Prob: print, colour, paper, printing, printed, hand, screen, ink, art, edition 
+ 	 FREX: print, colour, screen, printing, ink, paper, gsm, contain, london, printed 
+ 	 Lift: contain, print, colour, gsm, london, screen, matt, ink, code, printing 
+ 	 Score: contain, print, colour, ink, printing, paper, gsm, printed, screen, printer 
+Topic 10 Top Words:
+ 	 Highest Prob: pack, color, kit, block, thinking, build, set, fun, model, space 
+ 	 FREX: pack, block, thinking, kit, color, build, building, structure, fun, advance 
+ 	 Lift: thinking, block, pack, kit, advance, color, cardboard, sea, build, mention 
+ 	 Score: thinking, pack, kit, block, color, build, fun, structure, model, building 
+Topic 11 Top Words:
+ 	 Highest Prob: knife, blade, steel, carbon, handle, edge, fiber, cutting, material, pocket 
+ 	 FREX: knife, blade, carbon, fiber, edge, cutting, handle, steel, sharp, length 
+ 	 Lift: knife, blade, carbon, fiber, cutting, sharp, edge, handle, corrosion, steel 
+ 	 Score: knife, blade, steel, carbon, fiber, stainless, handle, titanium, edge, pocket 
+Topic 12 Top Words:
+ 	 Highest Prob: map, city, world, place, travel, country, see, line, location, size 
+ 	 FREX: map, city, street, san, location, park, mile, travel, scratch, mountain 
+ 	 Lift: map, city, san, street, mile, park, region, california, mountain, location 
+ 	 Score: map, city, street, san, travel, mile, park, york, world, location 
+Topic 13 Top Words:
+ 	 Highest Prob: sticker, plus, accessory, son, france, color, small, unit, team, thank 
+ 	 FREX: sticker, plus, son, accessory, france, unit, star, envelope, animal, contribution 
+ 	 Lift: sticker, plus, son, france, envelope, accessory, star, contribution, animal, ordered 
+ 	 Score: sticker, plus, son, france, accessory, envelope, unit, animal, skin, sheet 
+Topic 14 Top Words:
+ 	 Highest Prob: card, deck, playing, box, back, printed, set, custom, king, heart 
+ 	 FREX: deck, card, playing, box, king, club, magic, heart, printed, diamond 
+ 	 Lift: deck, playing, card, king, club, box, diamond, suit, magic, envelope 
+ 	 Score: deck, card, playing, box, printed, king, print, diamond, club, sheet 
+Topic 15 Top Words:
+ 	 Highest Prob: common, board, tool, user, business, brand, people, data, running, team 
+ 	 FREX: common, board, user, data, running, crowdfunding, brand, practice, entrepreneur, path 
+ 	 Lift: common, board, path, entrepreneur, data, client, running, crowdfunding, user, practice 
+ 	 Score: common, board, tool, data, user, business, brand, crowdfunding, kit, entrepreneur 
+Topic 16 Top Words:
+ 	 Highest Prob: pen, titanium, aluminum, metal, cap, finish, clip, material, ink, black 
+ 	 FREX: pen, titanium, aluminum, cap, clip, brass, metal, machined, ink, cnc 
+ 	 Lift: pen, titanium, machined, brass, aluminum, cap, cnc, gram, clip, writing 
+ 	 Score: pen, titanium, aluminum, ink, brass, machined, cap, clip, steel, metal 
+Topic 17 Top Words:
+ 	 Highest Prob: amp, team, system, experience, company, technology, hong, kong, world, development 
+ 	 FREX: hong, kong, global, amp, fan, china, system, technology, team, career 
+ 	 Lift: hong, kong, global, china, career, fan, management, phase, role, partnership 
+ 	 Score: hong, kong, amp, system, team, global, technology, china, fan, industry 
+Topic 18 Top Words:
+ 	 Highest Prob: wallet, card, pocket, backer, shipping, cash, slim, material, carry, back 
+ 	 FREX: wallet, cash, pocket, slim, slot, credit, minimalist, card, access, quite 
+ 	 Lift: wallet, cash, slim, slot, elastic, timing, credit, minimalist, pocket, bulky 
+ 	 Score: wallet, card, pocket, slim, cash, leather, slot, carry, elastic, clip 
+Topic 19 Top Words:
+ 	 Highest Prob: poster, print, printed, paper, printing, shipping, printer, color, signed, chart 
+ 	 FREX: poster, printed, printer, signed, chart, printing, paper, print, ink, tube 
+ 	 Lift: poster, chart, signed, numbered, printer, printed, cardboard, tube, printing, quote 
+ 	 Score: poster, print, printed, printing, paper, printer, ink, signed, tube, numbered 
+Topic 20 Top Words:
+ 	 Highest Prob: logo, business, website, want, medium, amp, mini, personal, unique, social 
+ 	 FREX: logo, website, mini, business, personal, medium, social, cool, marketing, awesome 
+ 	 Lift: logo, mini, website, official, web, marketing, personal, business, social, cool 
+ 	 Score: logo, mini, website, business, personal, medium, social, marketing, cool, file 
+Topic 21 Top Words:
+ 	 Highest Prob: light, color, glass, black, blue, clock, hour, red, dark, white 
+ 	 FREX: light, glass, clock, switch, dark, blue, led, red, hour, sun 
+ 	 Lift: clock, light, switch, sun, led, glass, dark, mode, yellow, arm 
+ 	 Score: clock, light, glass, switch, color, blue, black, led, tube, mode 
+Topic 22 Top Words:
+ 	 Highest Prob: plant, space, grow, air, home, system, nature, water, food, tree 
+ 	 FREX: plant, grow, air, space, nature, tree, growing, environment, home, room 
+ 	 Lift: plant, grow, growing, growth, air, nature, space, tree, healthy, fresh 
+ 	 Score: plant, grow, space, air, food, water, tree, nature, healthy, system 
+Topic 23 Top Words:
+ 	 Highest Prob: key, ring, food, wrap, sheet, way, carry, even, gift, pick 
+ 	 FREX: ring, key, wrap, food, sheet, kitchen, holder, pick, button, gift 
+ 	 Lift: wrap, ring, key, food, holder, kitchen, silicone, sheet, loose, pick 
+ 	 Score: wrap, key, ring, food, sheet, kitchen, silicone, holder, carry, pocket 
+Topic 24 Top Words:
+ 	 Highest Prob: water, coffee, bottle, cup, cold, drink, taste, glass, easy, clean 
+ 	 FREX: coffee, cup, bottle, drink, water, cold, taste, lid, hot, temperature 
+ 	 Lift: coffee, drink, cup, cold, bottle, taste, lid, water, hot, silicone 
+ 	 Score: coffee, water, bottle, cup, cold, drink, lid, temperature, glass, taste 
+Topic 25 Top Words:
+ 	 Highest Prob: plastic, natural, material, oil, skin, sustainable, cotton, ocean, recycled, free 
+ 	 FREX: oil, cotton, ocean, plastic, skin, sustainable, recycled, natural, eco, waste 
+ 	 Lift: oil, ocean, skin, eco, cotton, recycled, sustainability, environmentally, sustainable, chemical 
+ 	 Score: oil, plastic, skin, ocean, sustainable, cotton, recycled, natural, chemical, waste 
+Topic 26 Top Words:
+ 	 Highest Prob: leather, belt, hand, size, buckle, grain, vegetable, black, comment, amp 
+ 	 FREX: belt, leather, buckle, grain, vegetable, comment, hole, italian, band, brown 
+ 	 Lift: belt, grain, vegetable, leather, buckle, comment, thread, hole, italian, brown 
+ 	 Score: belt, leather, buckle, vegetable, grain, strap, italian, comment, hole, black 
+Topic 27 Top Words:
+ 	 Highest Prob: camera, plate, film, series, model, drawing, image, photo, car, photography 
+ 	 FREX: camera, plate, film, drawing, series, photography, model, car, photo, shot 
+ 	 Lift: plate, film, camera, photography, drawing, shoot, shot, series, car, capture 
+ 	 Score: plate, camera, film, series, drawing, model, image, car, photography, photo 
+Topic 28 Top Words:
+ 	 Highest Prob: page, notebook, paper, goal, day, daily, help, task, plan, note 
+ 	 FREX: notebook, page, task, paper, daily, write, list, plan, planning, focus 
+ 	 Lift: notebook, write, task, blank, page, planning, list, daily, layout, paper 
+ 	 Score: notebook, paper, page, write, task, goal, daily, blank, book, writing 
+Topic 29 Top Words:
+ 	 Highest Prob: sound, play, see, content, capable, html, browser, replay, video, way 
+ 	 FREX: sound, play, html, browser, replay, capable, content, see, video, patented 
+ 	 Lift: replay, browser, html, sound, capable, play, content, see, patented, hear 
+ 	 Score: replay, sound, play, browser, html, capable, content, see, patented, video 
+Topic 30 Top Words:
+ 	 Highest Prob: bike, wheel, lock, system, ride, mount, car, frame, road, fit 
+ 	 FREX: bike, wheel, lock, ride, mount, car, road, snap, frame, bar 
+ 	 Lift: bike, ride, wheel, lock, mount, road, snap, car, mountain, frame 
+ 	 Score: bike, lock, wheel, mount, ride, car, frame, system, snap, road 
+Topic 31 Top Words:
+ 	 Highest Prob: com, www, http, facebook, stainless, solid, usa, instagram, edition, many 
+ 	 FREX: http, www, com, facebook, solid, usa, australia, stainless, review, instagram 
+ 	 Lift: visible, http, www, com, australia, facebook, usa, supporter, instagram, solid 
+ 	 Score: visible, http, www, com, stainless, facebook, solid, australia, steel, instagram 
+Topic 32 Top Words:
+ 	 Highest Prob: etc, magnet, desk, box, different, set, work, stand, good, well 
+ 	 FREX: etc, desk, magnet, stand, box, five, consumer, designing, award, door 
+ 	 Lift: etc, desk, magnet, regardless, consumer, five, kitchen, award, box, stand 
+ 	 Score: etc, desk, magnet, box, kitchen, stand, award, organic, consumer, set 
+Topic 33 Top Words:
+ 	 Highest Prob: sign, piece, wood, pledge, want, wall, frame, come, square, reward 
+ 	 FREX: sign, wood, piece, square, wall, frame, handmade, workshop, laser, picture 
+ 	 Lift: sign, square, handmade, wood, workshop, letter, wall, hang, laser, frame 
+ 	 Score: sign, wood, piece, wall, frame, square, workshop, handmade, laser, pledge 
+Topic 34 Top Words:
+ 	 Highest Prob: strap, case, movement, dial, black, steel, hand, leather, swiss, automatic 
+ 	 FREX: dial, swiss, strap, movement, timepiece, sapphire, automatic, case, crystal, crown 
+ 	 Lift: swiss, sapphire, dial, timepiece, crown, crystal, automatic, wrist, movement, strap 
+ 	 Score: swiss, dial, strap, timepiece, sapphire, leather, automatic, crystal, movement, crown 
+Topic 35 Top Words:
+ 	 Highest Prob: device, power, phone, charging, battery, app, cable, usb, charge, technology 
+ 	 FREX: charging, device, cable, phone, usb, battery, power, app, apple, charge 
+ 	 Lift: charging, usb, cable, device, apple, smartphone, app, phone, mobile, battery 
+ 	 Score: charging, usb, device, cable, battery, phone, app, power, apple, charge 
+Topic 36 Top Words:
+ 	 Highest Prob: tool, bit, part, screw, unit, designed, superior, work, set, using 
+ 	 FREX: bit, tool, screw, superior, unit, part, precision, multi, useful, assembly 
+ 	 Lift: superior, bit, tool, screw, unit, european, useful, handy, precision, assembly 
+ 	 Score: superior, tool, bit, screw, part, unit, precision, award, multi, component 
+Topic 37 Top Words:
+ 	 Highest Prob: sleep, help, back, body, baby, neck, child, pain, support, night 
+ 	 FREX: sleep, baby, neck, pain, parent, child, night, body, benefit, kid 
+ 	 Lift: baby, sleep, pain, neck, parent, foam, stress, adult, pressure, child 
+ 	 Score: baby, sleep, neck, pain, child, parent, body, kid, shoulder, health 
+Topic 38 Top Words:
+ 	 Highest Prob: life, people, world, woman, want, way, help, moment, story, day 
+ 	 FREX: woman, life, moment, story, live, people, others, community, men, dream 
+ 	 Lift: woman, men, inspire, moment, positive, life, freedom, story, awareness, person 
+ 	 Score: woman, life, people, moment, men, story, world, community, inspire, quote 
+Topic 39 Top Words:
+ 	 Highest Prob: goal, stretch, add, unlocked, pledge, shipping, reward, option, additional, color 
+ 	 FREX: stretch, goal, unlocked, add, additional, option, added, pledge, ons, reach 
+ 	 Lift: unlocked, stretch, ons, goal, unlock, add, reached, bonus, added, additional 
+ 	 Score: unlocked, stretch, goal, add, pledge, ons, additional, option, shipping, unlock 
+Topic 40 Top Words:
+ 	 Highest Prob: bag, travel, backpack, pocket, carry, strap, shoe, fabric, keep, fit 
+ 	 FREX: bag, backpack, shoe, travel, zipper, fabric, gear, compartment, carry, pocket 
+ 	 Lift: shoe, bag, backpack, clothes, zipper, compartment, rain, waterproof, shoulder, laptop 
+ 	 Score: shoe, bag, backpack, strap, pocket, zipper, travel, compartment, fabric, shoulder 
+Topic 41 Top Words:
+ 	 Highest Prob: experience, factory, manufacturing, order, quantity, material, manufacturer, process, high, already 
+ 	 FREX: factory, quantity, experience, manufacturer, manufacturing, minimum, schedule, partner, depending, order 
+ 	 Lift: quantity, factory, minimum, sourced, slide, reasonable, depending, sourcing, prototyping, schedule 
+ 	 Score: quantity, factory, manufacturing, experience, manufacturer, glass, order, material, minimum, schedule 
+Topic 42 Top Words:
+ 	 Highest Prob: help, child, people, learn, kid, school, student, way, language, learning 
+ 	 FREX: learn, student, child, language, school, kid, learning, skill, event, story 
+ 	 Lift: language, learning, learn, student, skill, school, kid, program, child, activity 
+ 	 Score: language, child, kid, student, learning, learn, school, book, activity, event 
+Topic 43 Top Words:
+ 	 Highest Prob: collection, style, set, unique, different, pattern, symbol, create, font, element 
+ 	 FREX: collection, symbol, style, pattern, font, urban, element, structure, iconic, creation 
+ 	 Lift: symbol, font, collection, urban, pattern, highlight, iconic, style, bold, processing 
+ 	 Score: symbol, collection, font, style, urban, pattern, architecture, art, iconic, element 
+Topic 44 Top Words:
+ 	 Highest Prob: shirt, love, want, thing, really, help, great, people, know, something 
+ 	 FREX: shirt, really, thing, love, something, going, started, got, little, wanted 
+ 	 Lift: shirt, guy, pretty, maybe, lovely, really, stuff, sell, couple, probably 
+ 	 Score: shirt, love, really, thing, want, printed, little, something, pretty, idea 
+Topic 45 Top Words:
+ 	 Highest Prob: book, designer, art, graphic, work, edition, page, magazine, copy, artist 
+ 	 FREX: book, graphic, magazine, copy, designer, art, visual, edition, artist, manual 
+ 	 Lift: magazine, book, published, copy, graphic, museum, visual, york, designer, manual 
+ 	 Score: magazine, book, graphic, art, copy, designer, edition, artist, page, york 
+Topic 46 Top Words:
+ 	 Highest Prob: game, toy, figure, table, amp, action, inch, piece, art, character 
+ 	 FREX: toy, figure, game, table, action, character, head, collector, inch, tall 
+ 	 Lift: figure, toy, game, table, tall, collector, action, paint, character, animal 
+ 	 Score: figure, toy, game, table, action, collector, character, inch, art, kid 
+Topic 47 Top Words:
+ 	 Highest Prob: delay, may, manufacturing, process, every, delivery, issue, timeline, always, ensure 
+ 	 FREX: delay, timeline, issue, deliver, delivery, promise, ensure, arise, confident, manufacturing 
+ 	 Lift: anticipate, unforeseen, communicate, informed, delay, timeline, arise, obstacle, timely, promise 
+ 	 Score: anticipate, delay, manufacturing, delivery, issue, may, deliver, timeline, ensure, unforeseen 
+Topic 48 Top Words:
+ 	 Highest Prob: shipping, country, custom, duty, order, tax, delivery, package, international, fee 
+ 	 FREX: tax, duty, country, custom, vat, fee, import, package, responsible, charge 
+ 	 Lift: applicable, vat, tax, import, duty, policy, country, responsible, refund, fee 
+ 	 Score: applicable, duty, tax, vat, shipping, country, custom, import, fee, charge 
+Topic 49 Top Words:
+ 	 Highest Prob: surface, top, fire, base, designed, material, even, easy, magnet, perfect 
+ 	 FREX: fire, surface, base, stick, heat, magnet, magnetic, outdoor, top, patent 
+ 	 Lift: fire, stick, surface, floor, base, magnet, lighter, outdoors, fold, magnetic 
+ 	 Score: fire, surface, magnet, heat, base, outdoor, magnetic, grip, wood, stick 
+Topic 50 Top Words:
+ 	 Highest Prob: dog, better, walk, never, friend, help, owner, pad, best, love 
+ 	 FREX: dog, walk, owner, pad, safe, never, better, friend, secure, handle 
+ 	 Lift: dog, walk, owner, pad, approved, joy, busy, named, animal, memory 
+ 	 Score: dog, walk, pad, lock, food, toy, owner, better, safe, memory 

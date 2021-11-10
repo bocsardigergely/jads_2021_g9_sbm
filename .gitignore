@@ -2,4 +2,14 @@ data/all_project_week_19_32.csv
 data/raw_design_data.csv
 data/raw_games_data.csv
 data/raw_tech_data.csv
+
+data/clean_design_data.csv
+data/clean_games_data.csv
+data/clean_tech_data.csv
+
+data/design_stm_theta_with_meta.csv
+data/games_stm_theta_with_meta.csv
+data/tech_stm_theta_with_meta.csv
+
+
 .Rhistory
