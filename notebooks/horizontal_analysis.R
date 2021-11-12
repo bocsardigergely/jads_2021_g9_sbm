@@ -16,11 +16,11 @@ setup_data <- function(dataframe){
   dataframe$top_country <- as.factor(dataframe$top_country)
   dataframe$Staff_recommended <- as.logical(dataframe$Staff_recommended)
   dataframe$pledged_binary <- as.logical(dataframe$pledged_binary)
+  dataframe$pledged_percentage <- NULL
   
-  meta <- dataframe[, c(1:10)]
-  vec <- cbind(dataframe[, c(11:60)], pledged_binary = dataframe$pledged_binary, pledged_percentage =dataframe$pledged_percentage)
+  degree <- dataframe[, c(1:9)]
   
-  return(list('meta'=meta, 'vector' =vec))
+  return(list('degree'= degree, 'full' = dataframe))
 }
 #####
 
@@ -28,7 +28,7 @@ setup_data <- function(dataframe){
 #DESIGN DATASET ANALYSIS
 ##### 
 design <- setup_data(design_src)
-vec_model <- lm(pledged_binary ~ . - pledged_percentage, data = design$vector)
+vec_model <- glm(pledged_binary ~ ., data = design$degree, family = binomial(link = 'logit'))
 summary(vec_model)
 
 adjusted_vec_model <- lm(pledged_binary ~ X8 + X11 + X14 + X16 + X44 + X48, data = design$vector)
