@@ -3,16 +3,41 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+# Horizontal differentiation notebook
 
-Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+## Function definitions and data loading
 
 ```{r}
-plot(cars)
+# change wd for your own computer, this path is mine
+setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
+
+#loading the data in formats we like
+
+games_src <- read.csv('./data/final_games.csv', row.names = 1, header= TRUE)
+tech_src <- read.csv('./data/final_tech.csv', row.names = 1, header= TRUE)
+design_src <- read.csv('./data/final_design.csv', row.names = 1, header= TRUE)
+
+setup_data <- function(dataframe){
+  
+  dataframe$location <- as.factor(dataframe$location)
+  dataframe$Category <- as.factor(dataframe$Category)
+  dataframe$degree_of_diff <- as.numeric(gsub("\\[|\\]", "", dataframe$degree_of_diff))
+  dataframe$top_country <- as.factor(dataframe$top_country)
+  dataframe$Staff_recommended <- as.logical(dataframe$Staff_recommended)
+  dataframe$pledged_binary <- as.logical(dataframe$pledged_binary)
+  dataframe$pledged_percentage <- NULL
+  
+  degree <- dataframe[, c(1:9)]
+  
+  return(list('degree'= degree, 'full' = dataframe))
+}
+
 ```
 
-Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+## Design dataset analysis
+```{r}
+design <- setup_data(design_src)
+vec_model <- glm(pledged_binary ~ . - location - top_country, data = design$full, family = binomial(link = 'logit'))
+summary(vec_model)
+```
 
-When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
-
-The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.

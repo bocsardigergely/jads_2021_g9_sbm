@@ -215,21 +215,60 @@ pre code {
 
 
 <!-- rnb-text-begin -->
-<p>This is an <a href="http://rmarkdown.rstudio.com">R Markdown</a> Notebook. When you execute code within the notebook, the results appear beneath the code.</p>
-<p>Try executing this chunk by clicking the <em>Run</em> button within the chunk or by placing your cursor inside it and pressing <em>Ctrl+Shift+Enter</em>.</p>
+<div id="horizontal-differentiation-notebook" class="section level1">
+<h1>Horizontal differentiation notebook</h1>
+<div id="function-definitions-and-data-loading" class="section level2">
+<h2>Function definitions and data loading</h2>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGxvdChjYXJzKVxuYGBgIn0= -->
-<pre class="r"><code>plot(cars)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBjaGFuZ2Ugd2QgZm9yIHlvdXIgb3duIGNvbXB1dGVyLCB0aGlzIHBhdGggaXMgbWluZVxuc2V0d2QoJ0M6L0dlcmdvLW1hcHBhL3Byb2plY3RzL3Byb2dyYW1taW5nL3Byb2plY3RzL2phZHMvc2JtL2phZHNfMjAyMV9nOV9zYm0nKVxuXG5gYGAifQ== -->
+<pre class="r"><code># change wd for your own computer, this path is mine
+setwd(&#39;C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm&#39;)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiV2FybmluZzogVGhlIHdvcmtpbmcgZGlyZWN0b3J5IHdhcyBjaGFuZ2VkIHRvIEM6L0dlcmdvLW1hcHBhL3Byb2plY3RzL3Byb2dyYW1taW5nL3Byb2plY3RzL2phZHMvc2JtL2phZHNfMjAyMV9nOV9zYm0gaW5zaWRlIGEgbm90ZWJvb2sgY2h1bmsuIFRoZSB3b3JraW5nIGRpcmVjdG9yeSB3aWxsIGJlIHJlc2V0IHdoZW4gdGhlIGNodW5rIGlzIGZpbmlzaGVkIHJ1bm5pbmcuIFVzZSB0aGUga25pdHIgcm9vdC5kaXIgb3B0aW9uIGluIHRoZSBzZXR1cCBjaHVuayB0byBjaGFuZ2UgdGhlIHdvcmtpbmcgZGlyZWN0b3J5IGZvciBub3RlYm9vayBjaHVua3MuXG4ifQ== -->
+<pre><code>Warning: The working directory was changed to C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm inside a notebook chunk. The working directory will be reset when the chunk is finished running. Use the knitr root.dir option in the setup chunk to change the working directory for notebook chunks.</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuI2xvYWRpbmcgdGhlIGRhdGEgaW4gZm9ybWF0cyB3ZSBsaWtlXG5cbmdhbWVzX3NyYyA8LSByZWFkLmNzdignLi9kYXRhL2ZpbmFsX2dhbWVzLmNzdicsIHJvdy5uYW1lcyA9IDEsIGhlYWRlcj0gVFJVRSlcbnRlY2hfc3JjIDwtIHJlYWQuY3N2KCcuL2RhdGEvZmluYWxfdGVjaC5jc3YnLCByb3cubmFtZXMgPSAxLCBoZWFkZXI9IFRSVUUpXG5kZXNpZ25fc3JjIDwtIHJlYWQuY3N2KCcuL2RhdGEvZmluYWxfZGVzaWduLmNzdicsIHJvdy5uYW1lcyA9IDEsIGhlYWRlcj0gVFJVRSlcblxuc2V0dXBfZGF0YSA8LSBmdW5jdGlvbihkYXRhZnJhbWUpe1xuICBcbiAgZGF0YWZyYW1lJGxvY2F0aW9uIDwtIGFzLmZhY3RvcihkYXRhZnJhbWUkbG9jYXRpb24pXG4gIGRhdGFmcmFtZSRDYXRlZ29yeSA8LSBhcy5mYWN0b3IoZGF0YWZyYW1lJENhdGVnb3J5KVxuICBkYXRhZnJhbWUkZGVncmVlX29mX2RpZmYgPC0gYXMubnVtZXJpYyhnc3ViKFwiXFxcXFt8XFxcXF1cIiwgXCJcIiwgZGF0YWZyYW1lJGRlZ3JlZV9vZl9kaWZmKSlcbiAgZGF0YWZyYW1lJHRvcF9jb3VudHJ5IDwtIGFzLmZhY3RvcihkYXRhZnJhbWUkdG9wX2NvdW50cnkpXG4gIGRhdGFmcmFtZSRTdGFmZl9yZWNvbW1lbmRlZCA8LSBhcy5sb2dpY2FsKGRhdGFmcmFtZSRTdGFmZl9yZWNvbW1lbmRlZClcbiAgZGF0YWZyYW1lJHBsZWRnZWRfYmluYXJ5IDwtIGFzLmxvZ2ljYWwoZGF0YWZyYW1lJHBsZWRnZWRfYmluYXJ5KVxuICBkYXRhZnJhbWUkcGxlZGdlZF9wZXJjZW50YWdlIDwtIE5VTExcbiAgXG4gIGRlZ3JlZSA8LSBkYXRhZnJhbWVbLCBjKDE6OSldXG4gIFxuICByZXR1cm4obGlzdCgnZGVncmVlJz0gZGVncmVlLCAnZnVsbCcgPSBkYXRhZnJhbWUpKVxuYGBgIn0= -->
+<pre class="r"><code>#loading the data in formats we like
+
+games_src &lt;- read.csv(&#39;./data/final_games.csv&#39;, row.names = 1, header= TRUE)
+tech_src &lt;- read.csv(&#39;./data/final_tech.csv&#39;, row.names = 1, header= TRUE)
+design_src &lt;- read.csv(&#39;./data/final_design.csv&#39;, row.names = 1, header= TRUE)
+
+setup_data &lt;- function(dataframe){
+  
+  dataframe$location &lt;- as.factor(dataframe$location)
+  dataframe$Category &lt;- as.factor(dataframe$Category)
+  dataframe$degree_of_diff &lt;- as.numeric(gsub(&quot;\\[|\\]&quot;, &quot;&quot;, dataframe$degree_of_diff))
+  dataframe$top_country &lt;- as.factor(dataframe$top_country)
+  dataframe$Staff_recommended &lt;- as.logical(dataframe$Staff_recommended)
+  dataframe$pledged_binary &lt;- as.logical(dataframe$pledged_binary)
+  dataframe$pledged_percentage &lt;- NULL
+  
+  degree &lt;- dataframe[, c(1:9)]
+  
+  return(list(&#39;degree&#39;= degree, &#39;full&#39; = dataframe))</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>Add a new chunk by clicking the <em>Insert Chunk</em> button on the toolbar or by pressing <em>Ctrl+Alt+I</em>.</p>
-<p>When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the <em>Preview</em> button or press <em>Ctrl+Shift+K</em> to preview the HTML file).</p>
-<p>The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike <em>Knit</em>, <em>Preview</em> does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.</p>
+</div>
+<div id="design-dataset-analysis" class="section level2">
+<h2>Design dataset analysis</h2>
 <!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZGVzaWduIDwtIHNldHVwX2RhdGEoZGVzaWduX3NyYylcbnZlY19tb2RlbCA8LSBnbG0ocGxlZGdlZF9iaW5hcnkgfiAuIC0gbG9jYXRpb24gLSB0b3BfY291bnRyeSwgZGF0YSA9IGRlc2lnbiRmdWxsLCBmYW1pbHkgPSBiaW5vbWlhbChsaW5rID0gJ2xvZ2l0JykpXG5zdW1tYXJ5KHZlY19tb2RlbClcbmBgYCJ9 -->
+<pre class="r"><code>design &lt;- setup_data(design_src)
+vec_model &lt;- glm(pledged_binary ~ . - location - top_country, data = design$full, family = binomial(link = &#39;logit&#39;))
+summary(vec_model)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+</div>
+</div>
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQpUaGlzIGlzIGFuIFtSIE1hcmtkb3duXShodHRwOi8vcm1hcmtkb3duLnJzdHVkaW8uY29tKSBOb3RlYm9vay4gV2hlbiB5b3UgZXhlY3V0ZSBjb2RlIHdpdGhpbiB0aGUgbm90ZWJvb2ssIHRoZSByZXN1bHRzIGFwcGVhciBiZW5lYXRoIHRoZSBjb2RlLiANCg0KVHJ5IGV4ZWN1dGluZyB0aGlzIGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqUnVuKiBidXR0b24gd2l0aGluIHRoZSBjaHVuayBvciBieSBwbGFjaW5nIHlvdXIgY3Vyc29yIGluc2lkZSBpdCBhbmQgcHJlc3NpbmcgKkN0cmwrU2hpZnQrRW50ZXIqLiANCg0KYGBge3J9DQpwbG90KGNhcnMpDQpgYGANCg0KQWRkIGEgbmV3IGNodW5rIGJ5IGNsaWNraW5nIHRoZSAqSW5zZXJ0IENodW5rKiBidXR0b24gb24gdGhlIHRvb2xiYXIgb3IgYnkgcHJlc3NpbmcgKkN0cmwrQWx0K0kqLg0KDQpXaGVuIHlvdSBzYXZlIHRoZSBub3RlYm9vaywgYW4gSFRNTCBmaWxlIGNvbnRhaW5pbmcgdGhlIGNvZGUgYW5kIG91dHB1dCB3aWxsIGJlIHNhdmVkIGFsb25nc2lkZSBpdCAoY2xpY2sgdGhlICpQcmV2aWV3KiBidXR0b24gb3IgcHJlc3MgKkN0cmwrU2hpZnQrSyogdG8gcHJldmlldyB0aGUgSFRNTCBmaWxlKS4NCg0KVGhlIHByZXZpZXcgc2hvd3MgeW91IGEgcmVuZGVyZWQgSFRNTCBjb3B5IG9mIHRoZSBjb250ZW50cyBvZiB0aGUgZWRpdG9yLiBDb25zZXF1ZW50bHksIHVubGlrZSAqS25pdCosICpQcmV2aWV3KiBkb2VzIG5vdCBydW4gYW55IFIgY29kZSBjaHVua3MuIEluc3RlYWQsIHRoZSBvdXRwdXQgb2YgdGhlIGNodW5rIHdoZW4gaXQgd2FzIGxhc3QgcnVuIGluIHRoZSBlZGl0b3IgaXMgZGlzcGxheWVkLg0K</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KDQojIEhvcml6b250YWwgZGlmZmVyZW50aWF0aW9uIG5vdGVib29rDQoNCiMjIEZ1bmN0aW9uIGRlZmluaXRpb25zIGFuZCBkYXRhIGxvYWRpbmcNCg0KYGBge3J9DQojIGNoYW5nZSB3ZCBmb3IgeW91ciBvd24gY29tcHV0ZXIsIHRoaXMgcGF0aCBpcyBtaW5lDQpzZXR3ZCgnQzovR2VyZ28tbWFwcGEvcHJvamVjdHMvcHJvZ3JhbW1pbmcvcHJvamVjdHMvamFkcy9zYm0vamFkc18yMDIxX2c5X3NibScpDQoNCiNsb2FkaW5nIHRoZSBkYXRhIGluIGZvcm1hdHMgd2UgbGlrZQ0KDQpnYW1lc19zcmMgPC0gcmVhZC5jc3YoJy4vZGF0YS9maW5hbF9nYW1lcy5jc3YnLCByb3cubmFtZXMgPSAxLCBoZWFkZXI9IFRSVUUpDQp0ZWNoX3NyYyA8LSByZWFkLmNzdignLi9kYXRhL2ZpbmFsX3RlY2guY3N2Jywgcm93Lm5hbWVzID0gMSwgaGVhZGVyPSBUUlVFKQ0KZGVzaWduX3NyYyA8LSByZWFkLmNzdignLi9kYXRhL2ZpbmFsX2Rlc2lnbi5jc3YnLCByb3cubmFtZXMgPSAxLCBoZWFkZXI9IFRSVUUpDQoNCnNldHVwX2RhdGEgPC0gZnVuY3Rpb24oZGF0YWZyYW1lKXsNCiAgDQogIGRhdGFmcmFtZSRsb2NhdGlvbiA8LSBhcy5mYWN0b3IoZGF0YWZyYW1lJGxvY2F0aW9uKQ0KICBkYXRhZnJhbWUkQ2F0ZWdvcnkgPC0gYXMuZmFjdG9yKGRhdGFmcmFtZSRDYXRlZ29yeSkNCiAgZGF0YWZyYW1lJGRlZ3JlZV9vZl9kaWZmIDwtIGFzLm51bWVyaWMoZ3N1YigiXFxbfFxcXSIsICIiLCBkYXRhZnJhbWUkZGVncmVlX29mX2RpZmYpKQ0KICBkYXRhZnJhbWUkdG9wX2NvdW50cnkgPC0gYXMuZmFjdG9yKGRhdGFmcmFtZSR0b3BfY291bnRyeSkNCiAgZGF0YWZyYW1lJFN0YWZmX3JlY29tbWVuZGVkIDwtIGFzLmxvZ2ljYWwoZGF0YWZyYW1lJFN0YWZmX3JlY29tbWVuZGVkKQ0KICBkYXRhZnJhbWUkcGxlZGdlZF9iaW5hcnkgPC0gYXMubG9naWNhbChkYXRhZnJhbWUkcGxlZGdlZF9iaW5hcnkpDQogIGRhdGFmcmFtZSRwbGVkZ2VkX3BlcmNlbnRhZ2UgPC0gTlVMTA0KICANCiAgZGVncmVlIDwtIGRhdGFmcmFtZVssIGMoMTo5KV0NCiAgDQogIHJldHVybihsaXN0KCdkZWdyZWUnPSBkZWdyZWUsICdmdWxsJyA9IGRhdGFmcmFtZSkpDQp9DQoNCmBgYA0KDQojIyBEZXNpZ24gZGF0YXNldCBhbmFseXNpcw0KYGBge3J9DQpkZXNpZ24gPC0gc2V0dXBfZGF0YShkZXNpZ25fc3JjKQ0KdmVjX21vZGVsIDwtIGdsbShwbGVkZ2VkX2JpbmFyeSB+IC4gLSBsb2NhdGlvbiAtIHRvcF9jb3VudHJ5LCBkYXRhID0gZGVzaWduJGZ1bGwsIGZhbWlseSA9IGJpbm9taWFsKGxpbmsgPSAnbG9naXQnKSkNCnN1bW1hcnkodmVjX21vZGVsKQ0KYGBgDQoNCg==</div>
 
 
 

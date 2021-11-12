@@ -15,7 +15,7 @@ setup_data <- function(dataframe){
   dataframe$degree_of_diff <- as.numeric(gsub("\\[|\\]", "", dataframe$degree_of_diff))
   dataframe$top_country <- as.factor(dataframe$top_country)
   dataframe$Staff_recommended <- as.logical(dataframe$Staff_recommended)
-  dataframe$pledged_binary <- as.logical(dataframe$pledged_binary, )
+  dataframe$pledged_binary <- as.logical(dataframe$pledged_binary)
   dataframe$pledged_percentage <- NULL
   
   degree <- dataframe[, c(1:9)]
@@ -28,11 +28,8 @@ setup_data <- function(dataframe){
 #DESIGN DATASET ANALYSIS
 ##### 
 design <- setup_data(design_src)
-vec_model <- glm(pledged_binary ~ ., data = design$degree, family = binomial(link = 'logit'))
+vec_model <- glm(pledged_binary ~ . - top_country - location, data = design$full, family = binomial(link = 'logit'))
 summary(vec_model)
-
-adjusted_vec_model <- lm(pledged_binary ~ X8 + X11 + X14 + X16 + X44 + X48, data = design$vector)
-summary(adjusted_vec_model)
 
 #####
 
