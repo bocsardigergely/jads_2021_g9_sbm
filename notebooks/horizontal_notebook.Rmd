@@ -21,6 +21,7 @@ setup_data <- function(dataframe){
   
   dataframe$location <- as.factor(dataframe$location)
   dataframe$Category <- as.factor(dataframe$Category)
+  dataframe$launch_date <- as.Date(dataframe$launch_date)
   dataframe$degree_of_diff <- as.numeric(gsub("\\[|\\]", "", dataframe$degree_of_diff))
   dataframe$top_country <- as.factor(dataframe$top_country)
   dataframe$Staff_recommended <- as.logical(dataframe$Staff_recommended)
@@ -32,6 +33,19 @@ setup_data <- function(dataframe){
   return(list('degree'= degree, 'full' = dataframe))
 }
 
+binned_plot <- function(model){
+  bootcamp2021::binnedplot(fitted(model), 
+           residuals(model, type = "response"), 
+           nclass = NULL, 
+           xlab = "Expected Values", 
+           ylab = "Average residual", 
+           main = "Binned residual plot", 
+           cex.pts = 0.8, 
+           col.pts = 1, 
+           col.int = "gray")
+  
+}
+
 ```
 
 ## Design dataset analysis
@@ -40,4 +54,31 @@ design <- setup_data(design_src)
 vec_model <- glm(pledged_binary ~ . - location - top_country, data = design$full, family = binomial(link = 'logit'))
 summary(vec_model)
 ```
+```{r}
+binned_plot(vec_model)
+```
 
+
+
+## Games dataset analysis
+```{r}
+games <- setup_data(games_src)
+vec_model <- glm(pledged_binary ~ . - location - top_country, data = games$full, family = binomial(link = 'logit'))
+summary(vec_model)
+```
+
+```{r}
+binned_plot(vec_model)
+```
+
+
+## Tech dataset analysis
+```{r}
+tech <- setup_data(tech_src)
+vec_model <- glm(pledged_binary ~ . - location - top_country, data = tech$full, family = binomial(link = 'logit'))
+summary(vec_model)
+```
+
+```{r}
+binned_plot(vec_model)
+```
