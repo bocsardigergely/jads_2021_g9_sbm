@@ -15,7 +15,7 @@ setup_data <- function(dataframe){
   dataframe$degree_of_diff <- as.numeric(gsub("\\[|\\]", "", dataframe$degree_of_diff))
   dataframe$top_country <- as.factor(dataframe$top_country)
   dataframe$Staff_recommended <- as.logical(dataframe$Staff_recommended)
-  dataframe$pledged_binary <- as.logical(dataframe$pledged_binary)
+  dataframe$pledged_binary <- as.logical(dataframe$pledged_binary, )
   dataframe$pledged_percentage <- NULL
   
   degree <- dataframe[, c(1:9)]
