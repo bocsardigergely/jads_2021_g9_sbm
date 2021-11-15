@@ -7,6 +7,9 @@ games_src <- read.csv('./data/final_games.csv', row.names = 1, header= TRUE)
 tech_src <- read.csv('./data/final_tech.csv', row.names = 1, header= TRUE)
 design_src <- read.csv('./data/final_design.csv', row.names = 1, header= TRUE)
 
+games_src$project_slug <- NULL
+tech_src$project_slug <- NULL
+design_src$project_slug <- NULL
 
 setup_data <- function(dataframe){
   
