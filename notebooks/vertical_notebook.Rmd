@@ -1,0 +1,134 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# Data loading and functions definition
+
+```{r}
+# setting the working directory to my local computer
+setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
+
+#loading the data in formats we like
+#####
+games_src <- read.csv('./data/vertical_games.csv', row.names = 1, header= TRUE)
+tech_src <- read.csv('./data/vertical_tech.csv', row.names = 1, header= TRUE)
+design_src <- read.csv('./data/vertical_design.csv', row.names = 1, header= TRUE)
+
+games_src$project_slug <- NULL
+tech_src$project_slug <- NULL
+design_src$project_slug <- NULL
+
+setup_data <- function(dataframe){
+  
+  dataframe$location <- as.factor(dataframe$location)
+  dataframe$Category <- as.factor(dataframe$Category)
+  dataframe$launch_date <- as.Date(dataframe$launch_date)
+  dataframe$top_country <- as.factor(dataframe$top_country)
+  dataframe$Staff_recommended <- NULL
+  dataframe$pledged_binary <- as.logical(dataframe$pledged_binary)
+  dataframe$pledged_percentage <- NULL
+  
+  return(dataframe)
+}
+
+design <- setup_data(design_src)
+games <- setup_data(games_src)
+tech <- setup_data(tech_src)
+
+binned_plot <- function(model){
+  bootcamp2021::binnedplot(fitted(model), 
+                           residuals(model, type = "response"), 
+                           nclass = NULL, 
+                           xlab = "Expected Values", 
+                           ylab = "Average residual", 
+                           main = "Binned residual plot", 
+                           cex.pts = 0.8, 
+                           col.pts = 1, 
+                           col.int = "gray")
+  
+}
+
+
+build_models <- function(dataframe){
+  model_list <- list()
+  counter <- 1
+  for(label in unique(dataframe$labels)){
+    
+    df_name <- deparse(substitute(dataframe, env = environment()))
+    df <- dataframe[dataframe$labels == label,]
+    name <- paste("glm", df_name, label, sep = "_")
+    temp_glm <- glm(pledged_binary ~ . - labels - location - top_country, data = df, family = binomial(link = 'logit'))
+    assign(name, temp_glm)
+    model_list[[counter]] <- get(name)
+    counter <- counter + 1
+  }
+  return(model_list)
+}
+```
+## Checkin target and explanatory variabée correlation
+```{r}
+cor(design$avg_pledge, design$pledged_binary)
+cor(games$avg_pledge, games$pledged_binary)
+cor(tech$avg_pledge, tech$pledged_binary)
+```
+
+
+
+## Design analysis
+```{r}
+design_model <- build_models(design)
+```
+
+```{r}
+summary(design_model[[1]])
+binned_plot(design_model[[1]])
+```
+
+```{r}
+summary(design_model[[2]])
+binned_plot(design_model[[2]])
+```
+
+```{r}
+summary(design_model[[3]])
+binned_plot(design_model[[3]])
+```
+
+## Games analysis
+```{r}
+games_model <- build_models(games)
+```
+
+```{r}
+summary(games_model[[1]])
+binned_plot(games_model[[1]])
+```
+```{r}
+summary(games_model[[2]])
+binned_plot(games_model[[2]])
+```
+
+```{r}
+summary(games_model[[3]])
+binned_plot(games_model[[3]])
+```
+## Tech analysis
+```{r}
+tech_models <- build_models(tech)
+```
+
+```{r}
+summary(tech_models[[1]])
+binned_plot(tech_models[[1]])
+```
+
+```{r}
+summary(tech_models[[2]])
+binned_plot(tech_models[[2]])
+```
+
+```{r}
+summary(tech_models[[3]])
+binned_plot(tech_models[[3]])
+```
