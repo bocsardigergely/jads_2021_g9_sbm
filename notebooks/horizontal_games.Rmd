@@ -1,0 +1,99 @@
+---
+title: "Horizontal analysis of GAMES"
+output: html_notebook
+---
+# Loading data and adjusting variables
+
+
+```{r}
+# change wd for your own computer, this path is mine
+setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
+
+data_src <- read.csv('./data/final_games.csv', row.names = 1, header= TRUE)
+
+df <- data_src
+
+# changing the location to binary
+df$location_binary <- ifelse(df$location == 'us', 1, 0)
+
+df$subcategory[df$Category == 'Tabletop Games'] <- 1
+df$subcategory[df$Category == 'Video Games'] <- 2
+df$subcategory[!(df$Category %in% c('Tabletop Games', 'Video Games'))] <- 3
+
+df$location_binary <- as.logical(df$location_binary)
+df$subcategory <- as.factor(df$subcategory)
+df$launch_date <- as.Date(df$launch_date)
+df$degree_of_diff <- as.numeric(gsub("\\[|\\]", "", df$degree_of_diff))
+df$Staff_recommended <- as.logical(df$Staff_recommended)
+
+df$pledged_binary <- NULL
+df$top_country <- NULL
+df$location <- NULL
+df$project_slug <- NULL
+df$Category <- NULL
+df$Staff_recommended <- NULL
+
+```
+
+# Filtering out outliers and creating target variable
+```{r}
+boxplot(df$Number_Backers)
+
+df <- df[df$Number_Backers < quantile(df$Number_Backers, 0.8, na.rm = FALSE),]
+
+boxplot(df$Number_Backers)
+summary(df$Number_Backers)
+
+```
+
+# Filtering out outliers
+```{r}
+boxplot(df$pledged_percentage)
+
+df <- df[df$pledged_percentage < quantile(df$pledged_percentage, 0.8, na.rm = FALSE),]
+
+boxplot(df$pledged_percentage)
+summary(df$pledged_percentage)
+
+```
+#Creating target variable
+```{r}
+scale_O1 <- function(x){(x-min(x))/(max(x)-min(x))}
+
+
+df$pledged_percentage <- scale_O1(df$pledged_percentage)
+df$Number_Backers <- scale_O1(df$Number_Backers)
+df$degree_of_diff <- scale_O1(df$degree_of_diff)
+df$Creator_nb_projects <- scale_O1(df$Creator_nb_projects)
+
+
+```
+
+# Correlation table
+```{r}
+is_numeric <- sapply(df[c('location_binary' , 'subcategory'  , 'degree_of_diff' , 'Number_Backers' , 'Creator_nb_projects')], is.numeric)
+bootcamp2021::corrMat(df[c('location_binary' , 'subcategory'  , 'degree_of_diff' , 'Number_Backers' , 'Creator_nb_projects')][, is_numeric])
+```
+
+
+
+# OLS
+```{r}
+model1 <- lm(pledged_percentage ~ location_binary + subcategory  + degree_of_diff + Number_Backers + Creator_nb_projects, data = df)
+
+summary(model1)
+plot(model1)
+```
+```{r}
+
+model2 <- lm(pledged_percentage ~ . - degree_of_diff, data = df)
+
+summary(model2)
+plot(model2)
+```
+
+```{r}
+plot(df$degree_of_diff, df$pledged_percentage)
+
+```
+
