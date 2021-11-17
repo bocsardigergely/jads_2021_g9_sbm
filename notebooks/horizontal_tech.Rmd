@@ -1,5 +1,5 @@
 ---
-title: "Horizontal analysis of GAMES"
+title: "Horizontal analysis of TECH"
 output: html_notebook
 ---
 # Loading data and adjusting variables
@@ -9,16 +9,14 @@ output: html_notebook
 # change wd for your own computer, this path is mine
 setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
 
-data_src <- read.csv('./data/final_games.csv', row.names = 1, header= TRUE)
+data_src <- read.csv('./data/final_tech.csv', row.names = 1, header= TRUE)
 
 df <- data_src
 
 # changing the location to binary
 df$location_binary <- ifelse(df$location == 'us', 1, 0)
 
-df$subcategory[df$Category == 'Tabletop Games'] <- 1
-df$subcategory[df$Category == 'Video Games'] <- 2
-df$subcategory[!(df$Category %in% c('Tabletop Games', 'Video Games'))] <- 3
+df$subcategory_binary <- ifelse(df$Category %in% c('Hardware', 'Gadgets', 'Wearables'), 1, 0)
 
 df$location_binary <- as.logical(df$location_binary)
 df$subcategory <- as.factor(df$subcategory)
@@ -91,7 +89,6 @@ model2 <- lm(pledged_percentage ~ . - degree_of_diff, data = df)
 summary(model2)
 plot(model2)
 ```
-
 # Quadratic model
 
 ```{r}
@@ -101,12 +98,6 @@ model3 <- lm(pledged_percentage ~ location_binary + subcategory  + poly(degree_o
 
 summary(model3)
 plot(model3)
-
-```
-
-```{r}
-plot(df$degree_of_diff**2, df$pledged_percentage)
-plot(df$degree_of_diff, df$pledged_percentage)
 
 ```
 
