@@ -105,8 +105,8 @@ plot(model3)
 ```
 
 ```{r}
-plot(df$degree_of_diff**2, df$pledged_percentage)
-plot(df$degree_of_diff, df$pledged_percentage)
+plot(df$degree_of_diff**2, df$pledged_percentage, type='l', col='red')
+plot(df$degree_of_diff, df$pledged_percentage, type='l', col='red')
 
 ```
 
