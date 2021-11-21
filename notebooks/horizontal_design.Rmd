@@ -25,7 +25,6 @@ df$location_binary <- as.logical(df$location_binary)
 df$subcategory <- as.factor(df$subcategory)
 df$launch_date <- as.Date(df$launch_date)
 df$degree_of_diff <- as.numeric(gsub("\\[|\\]", "", df$degree_of_diff))
-df$Staff_recommended <- as.logical(df$Staff_recommended)
 
 df$pledged_binary <- NULL
 df$top_country <- NULL
@@ -33,28 +32,36 @@ df$location <- NULL
 df$project_slug <- NULL
 df$Category <- NULL
 df$Staff_recommended <- NULL
+df$subcategory <- NULL
+
+
+#df$meta = 'design'
+#write.csv(df, './data/adjusted_design.csv')
 
 ```
 
 # Filtering out outliers and creating target variable
 ```{r}
 boxplot(df$Number_Backers)
-
 df <- df[df$Number_Backers < quantile(df$Number_Backers, 0.8, na.rm = FALSE),]
-
 boxplot(df$Number_Backers)
 summary(df$Number_Backers)
 
-```
 
-# Filtering out outliers
-```{r}
 boxplot(df$pledged_percentage)
-
 df <- df[df$pledged_percentage < quantile(df$pledged_percentage, 0.8, na.rm = FALSE),]
-
 boxplot(df$pledged_percentage)
 summary(df$pledged_percentage)
+
+boxplot(df$Goal_USD)
+df <- df[df$Goal_USD < quantile(df$Goal_USD, 0.8, na.rm = FALSE),]
+boxplot(df$Goal_USD)
+summary(df$Goal_USD)
+
+boxplot(df$Pledge_USD)
+df <- df[df$Pledge_USD < quantile(df$Goal_USD, 0.95, na.rm = FALSE),]
+boxplot(df$Pledge_USD)
+summary(df$Pledge_USD)
 
 ```
 #Creating target variable
@@ -66,35 +73,30 @@ df$pledged_percentage <- scale_O1(df$pledged_percentage)
 df$Number_Backers <- scale_O1(df$Number_Backers)
 df$degree_of_diff <- scale_O1(df$degree_of_diff)
 df$Creator_nb_projects <- scale_O1(df$Creator_nb_projects)
+df$Goal_USD <- scale_O1(df$Goal_USD)
+df$Pledge_USD <- scale_O1(df$Pledge_USD)
 
 
 ```
 
 # Correlation table
 ```{r}
-is_numeric <- sapply(df[c('location_binary' , 'subcategory'  , 'degree_of_diff' , 'Number_Backers' , 'Creator_nb_projects')], is.numeric)
-bootcamp2021::corrMat(df[c('location_binary' , 'subcategory'  , 'degree_of_diff' , 'Number_Backers' , 'Creator_nb_projects')][, is_numeric])
+bootcamp2021::corrMat(df[c('pledged_percentage', 'Number_Backers', 'degree_of_diff', 'Creator_nb_projects', 'Goal_USD', 'Pledge_USD')])
 ```
 
 
 
 # OLS
 ```{r}
-model1 <- lm(pledged_percentage ~ location_binary + subcategory  + degree_of_diff + Number_Backers + Creator_nb_projects, data = df)
+model1 <- lm(pledged_percentage ~ location_binary + degree_of_diff + Number_Backers + Creator_nb_projects, data = df)
 
 summary(model1)
 plot(model1)
 ```
 ```{r}
+model3 <- lm(Pledge_USD ~ location_binary + degree_of_diff + Number_Backers + Creator_nb_projects + Goal_USD, data = df)
 
-model2 <- lm(pledged_percentage ~ . - degree_of_diff, data = df)
-
-summary(model2)
-plot(model2)
-```
-
-```{r}
-plot(df$degree_of_diff, df$pledged_percentage)
-
+summary(model3)
+plot(model3)
 ```
 
