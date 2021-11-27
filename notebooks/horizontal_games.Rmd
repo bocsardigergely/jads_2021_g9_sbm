@@ -37,6 +37,9 @@ df$Category <- NULL
 df$Staff_recommended <- NULL
 df$subcategory <- NULL
 
+write.csv(do.call(cbind, lapply(df[c('Pledge_USD', 'degree_of_diff', 'Number_Backers', 'Creator_nb_projects', 'Goal_USD', 'pledged_percentage')], summary)), './docs/games_descriptive.csv')
+
+
 #df$meta = 'games'
 # write.csv(df, './data/adjusted_games.csv')
 
@@ -96,6 +99,7 @@ plot(model1)
 
 setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
 write.csv(tidy(model1), './docs/games_percentage_model_coefs.csv')
+write.csv(glance(model1), './docs/games_percentage_model_glance.csv')
 ```
 ```{r}
 
@@ -105,6 +109,7 @@ summary(model2)
 plot(model2)
 setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
 write.csv(tidy(model2), './docs/games_topics_model_coefs.csv')
+write.csv(glance(model2), './docs/games_topics_model_glance.csv')
 ```
 
 
@@ -119,6 +124,7 @@ plot(model3)
 
 setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
 write.csv(tidy(model3), './docs/games_pledge_model_coefs.csv')
+write.csv(glance(model3), './docs/games_pledge_model_glance.csv')
 
 ```
 
@@ -141,6 +147,9 @@ dummyDF = as.data.frame(dummyDF)
 yv=predict(model_inv_u, newdata=subset(dummyDF, select=c(-pledged_percentage)))
 lines(xv, yv, col='red', lwd=2)
 
+setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
+write.csv(tidy(model_inv_u), './docs/games_inv_u_model_perc_coefs.csv')
+write.csv(glance(model_inv_u), './docs/games_inv_u_model_perc_glance.csv')
 ```
 ```{r}
 xmin = 0; xmax = 1
@@ -162,6 +171,8 @@ dummyDF[,2] = xv
 dummyDF = as.data.frame(dummyDF)
 yv=predict(model_inv_u, newdata=subset(dummyDF, select=c(-Pledge_USD)))
 lines(xv, yv, col='red', lwd=2)
-
+setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
+write.csv(tidy(model_inv_u), './docs/games_inv_u_model_pledge_coefs.csv')
+write.csv(glance(model_inv_u), './docs/games_inv_u_model_pledge_glance.csv')
 ```
 

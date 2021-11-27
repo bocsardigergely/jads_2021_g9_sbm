@@ -34,6 +34,7 @@ df$Category <- NULL
 df$Staff_recommended <- NULL
 df$subcategory <- NULL
 
+write.csv(do.call(cbind, lapply(df[c('Pledge_USD', 'degree_of_diff', 'Number_Backers', 'Creator_nb_projects', 'Goal_USD', 'pledged_percentage')], summary)), './docs/design_descriptive.csv')
 
 #df$meta = 'design'
 #write.csv(df, './data/adjusted_design.csv')
@@ -95,10 +96,9 @@ plot(model1)
 library(broom)
 tidy(model1)
 
-```
-```{r}
 setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
 write.csv(tidy(model1), './docs/design_percentage_model_coefs.csv')
+write.csv(glance(model1), './docs/design_percentage_model_glance.csv')
 ```
 
 
@@ -112,12 +112,10 @@ plot(model3)
 library(broom)
 tidy(model3)
 
-```
 
-
-```{r}
 setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
 write.csv(tidy(model3), './docs/design_pledge_model_coefs.csv')
+write.csv(glance(model3), './docs/design_pledge_model_glance.csv')
 ```
 # inverted U
 ```{r}
@@ -137,6 +135,9 @@ dummyDF[,2] = xv
 dummyDF = as.data.frame(dummyDF)
 yv=predict(model_inv_u, newdata=subset(dummyDF, select=c(-pledged_percentage)))
 lines(xv, yv, col='red', lwd=2)
+setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
+write.csv(tidy(model_inv_u), './docs/design_inv_u_model_perc_coefs.csv')
+write.csv(glance(model_inv_u), './docs/design_inv_u_model_perc_glance.csv')
 
 ```
 # Robustness check
@@ -160,5 +161,7 @@ dummyDF[,2] = xv
 dummyDF = as.data.frame(dummyDF)
 yv=predict(model_inv_u, newdata=subset(dummyDF, select=c(-Pledge_USD)))
 lines(xv, yv, col='red', lwd=2)
-
+setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
+write.csv(tidy(model_inv_u), './docs/design_inv_u_model_pledge_coefs.csv')
+write.csv(glance(model_inv_u), './docs/design_inv_u_model_pledge_glance.csv')
 ```

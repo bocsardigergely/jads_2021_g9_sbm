@@ -32,6 +32,8 @@ df$Staff_recommended <- NULL
 df$subcategory_binary <- NULL
 df$subcategory <- NULL
 
+write.csv(do.call(cbind, lapply(df[c('Pledge_USD', 'degree_of_diff', 'Number_Backers', 'Creator_nb_projects', 'Goal_USD', 'pledged_percentage')], summary)), './docs/tech_descriptive.csv')
+
 #df$meta = 'tech'
 #write.csv(df, './data/adjusted_tech.csv')
 
@@ -94,6 +96,8 @@ plot(model1)
 library(broom)
 setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
 write.csv(tidy(model1), './docs/tech_percentage_model_coefs.csv')
+write.csv(glance(model1), './docs/tech_percentage_model_glance.csv')
+
 ```
 ```{r}
 
@@ -104,6 +108,7 @@ plot(model3)
 library(broom)
 setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
 write.csv(tidy(model3), './docs/tech_pledge_model_coefs.csv')
+write.csv(glance(model3), './docs/tech_pledge_model_glance.csv')
 ```
 
 # inverted U
@@ -126,6 +131,9 @@ dummyDF[,2] = xv
 dummyDF = as.data.frame(dummyDF)
 yv=predict(model_inv_u, newdata=subset(dummyDF, select=c(-pledged_percentage)))
 lines(xv, yv, col='red', lwd=2)
+setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
+write.csv(tidy(model_inv_u), './docs/tech_inv_u_model_perc_coefs.csv')
+write.csv(glance(model_inv_u), './docs/tech_inv_u_model_perc_glance.csv')
 
 ```
 robustness check
@@ -149,5 +157,7 @@ dummyDF[,2] = xv
 dummyDF = as.data.frame(dummyDF)
 yv=predict(model_inv_u, newdata=subset(dummyDF, select=c(-Pledge_USD)))
 lines(xv, yv, col='red', lwd=2)
-
+setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
+write.csv(tidy(model_inv_u), './docs/tech_inv_u_model_pledge_coefs.csv')
+write.csv(glance(model_inv_u), './docs/tech_inv_u_model_pledge_glance.csv')
 ```
