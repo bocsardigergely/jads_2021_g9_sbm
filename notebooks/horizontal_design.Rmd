@@ -139,3 +139,26 @@ yv=predict(model_inv_u, newdata=subset(dummyDF, select=c(-pledged_percentage)))
 lines(xv, yv, col='red', lwd=2)
 
 ```
+# Robustness check
+```{r}
+xmin = 0; xmax = 1
+df = subset(df, select = c(Pledge_USD,degree_of_diff,Number_Backers,Creator_nb_projects, Goal_USD ))
+plot( df$degree_of_diff, df$Pledge_USD, xlim=c(xmin,xmax) )
+
+
+model_inv_u <- lm(Pledge_USD ~  poly(degree_of_diff,2) + Number_Backers + Creator_nb_projects + Goal_USD, data = df)
+
+summary(model_inv_u)
+
+
+N = 1e4
+means = colMeans(df)
+dummyDF = t(as.data.frame(means))
+for(i in 2:N){dummyDF=rbind(dummyDF,means)} 
+xv=seq(xmin,xmax, length.out=N)
+dummyDF[,2] = xv
+dummyDF = as.data.frame(dummyDF)
+yv=predict(model_inv_u, newdata=subset(dummyDF, select=c(-Pledge_USD)))
+lines(xv, yv, col='red', lwd=2)
+
+```
