@@ -8,7 +8,7 @@ output: html_notebook
 ```{r}
 # change wd for your own computer, this path is mine
 setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
-
+library(stargazer)
 data_src <- read.csv('./data/final_tech.csv', row.names = 1, header= TRUE)
 
 df <- data_src
@@ -23,6 +23,7 @@ df$subcategory <- as.factor(df$subcategory)
 df$launch_date <- as.Date(df$launch_date)
 df$degree_of_diff <- as.numeric(gsub("\\[|\\]", "", df$degree_of_diff))
 
+
 df$pledged_binary <- NULL
 df$top_country <- NULL
 df$location <- NULL
@@ -32,37 +33,29 @@ df$Staff_recommended <- NULL
 df$subcategory_binary <- NULL
 df$subcategory <- NULL
 
-write.csv(do.call(cbind, lapply(df[c('Pledge_USD', 'degree_of_diff', 'Number_Backers', 'Creator_nb_projects', 'Goal_USD', 'pledged_percentage')], summary)), './docs/tech_descriptive.csv')
-
-#df$meta = 'tech'
-#write.csv(df, './data/adjusted_tech.csv')
+stargazer(df[1:7])
 
 ```
 
-# Filtering out outliers and creating target variable
+
 ```{r}
-boxplot(df$Number_Backers)
-df <- df[df$Number_Backers < quantile(df$Number_Backers, 0.8, na.rm = FALSE),]
-boxplot(df$Number_Backers)
-summary(df$Number_Backers)
+hist(df$pledged_percentage, breaks = 10, main ='histogram of percentage pledged')
+df$pledged_percentage <- log(df$pledged_percentage) 
+outliers <- boxplot(df$pledged_percentage, plot=FALSE)$out
+df<- df[-which(df$pledged_percentage %in% outliers),]
+hist(df$pledged_percentage, breaks = 10, main ='histogram of percentage pledged after log transform')
 
+hist(df$Pledge_USD, breaks = 10, main ='histogram of pledge amount')
+df$Pledge_USD <- log(df$Pledge_USD) 
+outliers <- boxplot(df$Pledge_USD, plot=FALSE)$out
+df<- df[-which(df$Pledge_USD %in% outliers),]
+hist(df$Pledge_USD, breaks = 10, main ='histogram of pledge amount after log transform')
 
-boxplot(df$pledged_percentage)
-df <- df[df$pledged_percentage < quantile(df$pledged_percentage, 0.8, na.rm = FALSE),]
-boxplot(df$pledged_percentage)
-summary(df$pledged_percentage)
-
-boxplot(df$Goal_USD)
-df <- df[df$Goal_USD < quantile(df$Goal_USD, 0.8, na.rm = FALSE),]
-boxplot(df$Goal_USD)
-summary(df$Goal_USD)
-
-boxplot(df$Pledge_USD)
-df <- df[df$Pledge_USD < quantile(df$Goal_USD, 0.95, na.rm = FALSE),]
-boxplot(df$Pledge_USD)
-summary(df$Pledge_USD)
+df$Number_Backers <- log(df$Number_Backers)
+df$Goal_USD <- log(df$Goal_USD)
 
 ```
+
 
 
 #Creating target variable
@@ -84,80 +77,75 @@ df$Pledge_USD <- scale_O1(df$Pledge_USD)
 bootcamp2021::corrMat(df[c('pledged_percentage', 'Number_Backers', 'degree_of_diff', 'Creator_nb_projects', 'Goal_USD', 'Pledge_USD')])
 ```
 
-
-
-# OLS
 ```{r}
-model1 <- lm(pledged_percentage ~ location_binary + degree_of_diff + Number_Backers + Creator_nb_projects, data = df)
+lm1 <- lm(pledged_percentage ~ location_binary  + Number_Backers + Creator_nb_projects, data = df)
+lm2 <- lm(pledged_percentage ~ location_binary + degree_of_diff + Number_Backers + Creator_nb_projects, data = df)
+lm4 <- lm(Pledge_USD ~ location_binary  + Number_Backers + Creator_nb_projects + Goal_USD, data = df)
+lm3 <- lm(Pledge_USD ~ location_binary + degree_of_diff + Number_Backers + Creator_nb_projects + Goal_USD, data = df)
 
-summary(model1)
-plot(model1)
+stargazer(lm1, lm2, lm4, lm3, title="Regression Results",
+align=TRUE, dep.var.labels=c("Percentage Pledged","Pledge Amount"),
+covariate.labels=c("Location","Degree of Differentiation",
+"Number of Backers","Creator projects","Goal Amount"),
+omit.stat=c("LL","ser","f"), no.space=TRUE)
 
-library(broom)
-setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
-write.csv(tidy(model1), './docs/tech_percentage_model_coefs.csv')
-write.csv(glance(model1), './docs/tech_percentage_model_glance.csv')
-
+summary(lm2)
+summary(lm3)
 ```
-```{r}
 
-model3 <- lm(Pledge_USD ~ location_binary + degree_of_diff + Number_Backers + Creator_nb_projects + Goal_USD, data = df)
 
-summary(model3)
-plot(model3)
-library(broom)
-setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
-write.csv(tidy(model3), './docs/tech_pledge_model_coefs.csv')
-write.csv(glance(model3), './docs/tech_pledge_model_glance.csv')
-```
+
 
 # inverted U
 ```{r}
 xmin = 0; xmax = 1
-df = subset(df, select = c(pledged_percentage,degree_of_diff,Number_Backers,Creator_nb_projects ))
-plot( df$degree_of_diff, df$pledged_percentage, xlim=c(xmin,xmax) )
+df1 = subset(df, select = c(pledged_percentage,degree_of_diff,Number_Backers,Creator_nb_projects ))
+plot( df1$degree_of_diff, df1$pledged_percentage, xlim=c(xmin,xmax) )
 
 
-model_inv_u <- lm(pledged_percentage ~  poly(degree_of_diff,2) + Number_Backers + Creator_nb_projects, data = df)
-
-summary(model_inv_u)
+model_inv_u1 <- lm(pledged_percentage ~  poly(degree_of_diff,2) + Number_Backers + Creator_nb_projects, data = df1)
+model_inv_u2 <- lm(pledged_percentage ~   Number_Backers + Creator_nb_projects, data = df1)
 
 N = 1e4
-means = colMeans(df)
+means = colMeans(df1)
 dummyDF = t(as.data.frame(means))
 for(i in 2:N){dummyDF=rbind(dummyDF,means)} 
 xv=seq(xmin,xmax, length.out=N)
 dummyDF[,2] = xv
 dummyDF = as.data.frame(dummyDF)
-yv=predict(model_inv_u, newdata=subset(dummyDF, select=c(-pledged_percentage)))
+yv=predict(model_inv_u1, newdata=subset(dummyDF, select=c(-pledged_percentage)))
 lines(xv, yv, col='red', lwd=2)
-setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
-write.csv(tidy(model_inv_u), './docs/tech_inv_u_model_perc_coefs.csv')
-write.csv(glance(model_inv_u), './docs/tech_inv_u_model_perc_glance.csv')
+
 
 ```
-robustness check
+# Robustness check
 ```{r}
 xmin = 0; xmax = 1
-df = subset(df, select = c(Pledge_USD,degree_of_diff,Number_Backers,Creator_nb_projects, Goal_USD ))
-plot( df$degree_of_diff, df$Pledge_USD, xlim=c(xmin,xmax) )
+df2 = subset(df, select = c(Pledge_USD,degree_of_diff,Number_Backers,Creator_nb_projects, Goal_USD ))
+plot( df2$degree_of_diff, df2$Pledge_USD, xlim=c(xmin,xmax) )
 
 
-model_inv_u <- lm(Pledge_USD ~  poly(degree_of_diff,2) + Number_Backers + Creator_nb_projects + Goal_USD, data = df)
+model_inv_u3 <- lm(Pledge_USD ~  poly(degree_of_diff,2) + Number_Backers + Creator_nb_projects + Goal_USD, data = df2)
+model_inv_u4 <- lm(Pledge_USD ~   Number_Backers + Creator_nb_projects + Goal_USD, data = df2)
 
-summary(model_inv_u)
+summary(model_inv_u3)
 
 
 N = 1e4
-means = colMeans(df)
+means = colMeans(df2)
 dummyDF = t(as.data.frame(means))
 for(i in 2:N){dummyDF=rbind(dummyDF,means)} 
 xv=seq(xmin,xmax, length.out=N)
 dummyDF[,2] = xv
 dummyDF = as.data.frame(dummyDF)
-yv=predict(model_inv_u, newdata=subset(dummyDF, select=c(-Pledge_USD)))
+yv=predict(model_inv_u3, newdata=subset(dummyDF, select=c(-Pledge_USD)))
 lines(xv, yv, col='red', lwd=2)
-setwd('C:/Gergo-mappa/projects/programming/projects/jads/sbm/jads_2021_g9_sbm')
-write.csv(tidy(model_inv_u), './docs/tech_inv_u_model_pledge_coefs.csv')
-write.csv(glance(model_inv_u), './docs/tech_inv_u_model_pledge_glance.csv')
+
+```
+```{r}
+covariate.labels=c("Degree of Differentiation","(Degree of Differentiation)^2", "Number of Backers","Creator projects","Goal Amount")
+
+stargazer(model_inv_u2, model_inv_u1, model_inv_u4, model_inv_u3,  title="Polynomial Regression Results",
+align=TRUE, dep.var.labels=c("Percentage Pledged","Pledge Amount"),covariate.labels=c("Degree of Differentiation","(Degree of Differentiation)^2", "Number of Backers","Creator projects","Goal Amount"),
+omit.stat=c("LL","ser","f"), no.space=TRUE)
 ```
